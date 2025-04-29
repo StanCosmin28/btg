@@ -4,29 +4,35 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <a href="/" className="flex items-center group">
-              <img
-                src="public/btg-logo.svg"
-                className="h-8 me-3 transition-transform group-hover:rotate-12"
-                alt="Logo"
-              />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white group-hover:text-blue-400 transition-colors">
-                BTG
-              </span>
-            </a>
+            <div className="flex flex-col text-left gap-4">
+              <a href="/" className="flex items-center group">
+                <img
+                  src="public/btg-logo.svg"
+                  className="h-8 me-3 transition-transform group-hover:rotate-12"
+                  alt="Logo"
+                />
+                <span className="self-center text-2xl font-semibold whitespace-nowrap text-white group-hover:text-blue-400 transition-colors">
+                  BTG
+                </span>
+              </a>
+              <p>
+                Lorem ipsum dolor sit, amet <br /> consectetur adipisicing elit.
+                A
+              </p>
+            </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-10 sm:grid-cols-3">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-white uppercase">
-                Resources
+                Servicii
               </h2>
               <ul className="text-gray-400 font-medium">
-                <li className="mb-4">
+                <li className="">
                   <a
                     href="#"
                     className="hover:text-white hover:underline underline-offset-4 transition-all"
                   >
-                    Flowbite
+                    Proiectare
                   </a>
                 </li>
                 <li>
@@ -34,22 +40,30 @@ export default function Footer() {
                     href="#"
                     className="hover:text-white hover:underline underline-offset-4 transition-all"
                   >
-                    Tailwind CSS
+                    Optimizare
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white hover:underline underline-offset-4 transition-all"
+                  >
+                    Integrare BMS
                   </a>
                 </li>
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-white uppercase">
-                Follow us
+                Companie
               </h2>
               <ul className="text-gray-400 font-medium">
-                <li className="mb-4">
+                <li className="">
                   <a
                     href="#"
                     className="hover:text-white hover:underline underline-offset-4 transition-all"
                   >
-                    Github
+                    Despre Noi
                   </a>
                 </li>
                 <li>
@@ -57,22 +71,46 @@ export default function Footer() {
                     href="#"
                     className="hover:text-white hover:underline underline-offset-4 transition-all"
                   >
-                    Discord
+                    Solutii
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white hover:underline underline-offset-4 transition-all"
+                  >
+                    Expertiza
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white hover:underline underline-offset-4 transition-all"
+                  >
+                    Portofoliu
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white hover:underline underline-offset-4 transition-all"
+                  >
+                    Blog
                   </a>
                 </li>
               </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold text-white uppercase">
-                Legal
+                Contact
               </h2>
               <ul className="text-gray-400 font-medium">
-                <li className="mb-4">
+                <li className="">
                   <a
                     href="#"
                     className="hover:text-white hover:underline underline-offset-4 transition-all"
                   >
-                    Privacy Policy
+                    Locatie
                   </a>
                 </li>
                 <li>
@@ -80,7 +118,15 @@ export default function Footer() {
                     href="#"
                     className="hover:text-white hover:underline underline-offset-4 transition-all"
                   >
-                    Terms & Conditions
+                    Email
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-white hover:underline underline-offset-4 transition-all"
+                  >
+                    tel
                   </a>
                 </li>
               </ul>
