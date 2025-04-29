@@ -53,7 +53,7 @@ const Navbar = () => {
     >
       <div className="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-4 xl:px-20">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/btg-logo.svg" className="h-8" alt="Flowbite Logo" />
+          <img src="/btg-logo.svg" className="h-8" alt="BTG Logo" />
           <span
             className={`self-center text-2xl font-bold whitespace-nowrap ${textColor} transition-colors duration-300`}
           >
