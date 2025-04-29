@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <a href="/" className="flex items-center group">
               <img
-                src="/btg-logo.svg"
+                src="public/btg-logo.svg"
                 className="h-8 me-3 transition-transform group-hover:rotate-12"
                 alt="Logo"
               />
