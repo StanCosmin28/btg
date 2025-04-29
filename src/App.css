@@ -1,0 +1,23 @@
+@import "tailwindcss";
+#root {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+html,
+body {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+  }
+}
+
+body {
+  font-family: system-ui;
+  overscroll-behavior-y: none; /* Prevent pull-to-refresh */
+}
