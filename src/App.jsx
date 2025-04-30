@@ -21,14 +21,14 @@ function App() {
         <Navbar />
         <HeaderVideo />
       </Section>
-      {/* <main>
+      <main>
         <TextFillOnScroll
           text="BUILDING TECHNOLOGY GROUP"
           fillColor="#0655D1"
           borderColor="#000000"
           borderWidth={1}
         />
-      </main> */}
+      </main>
       {/* <SolutionsSection /> */}
       {/* About Us Section */}
       <AboutUs />
