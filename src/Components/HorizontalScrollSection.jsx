@@ -52,19 +52,33 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
     };
   }, []);
 
+  const images = [
+    "src/assets/slider0.png",
+    "src/assets/slider1.png",
+    "src/assets/slider2.png",
+  ];
   const renderMiniSections = () => {
-    return Array.from({ length: 4 }).map((_, index) => (
+    return Array.from({ length: 3 }).map((_, index) => (
       <article
         key={`panel-${index}`}
         ref={addToPanelsRef}
-        className={`panel panel-${index + 1} ${
-          index % 2 === 0 ? "blue" : "red"
-        }`}
+        className={`panel panel-${index + 1} relative`}
       >
-        <div className="box-container">
-          <Box className={`box-${index + 1}`}>{index + 1}</Box>
-          {/* <Box className={`box-${index + 1}-sub`}>{index + 1}.1</Box> */}
+        {/* ${index % 2 === 0 ? "blue" : "red"} */}
+        {/* <div className="box-container"> */}
+        {/* <Box className={`box-${index + 1}`}>{index + 1}</Box> */}
+        <div className="">
+          <img src={images[index]} alt="" />
+          <div className="absolute text-left bottom-10 left-10 max-w-md">
+            <h1 className="text-3xl">{images[index]}</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+              adipisci architecto repudiandae non, veritatis labore!
+            </p>
+          </div>
         </div>
+        {/* <Box className={`absolute box-${index + 1}-sub`}>{index + 1}.1</Box> */}
+        {/* </div> */}
       </article>
     ));
   };

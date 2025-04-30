@@ -1,3 +1,6 @@
+import HeaderContacts from "./HeaderContacts";
+import HeroHeaderText from "./HeroHeaderText";
+
 export default function HeaderVideo() {
   return (
     <div className="relative w-full h-screen">
@@ -12,10 +15,16 @@ export default function HeaderVideo() {
         Your browser does not support the video tag.
       </video>
       <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative z-10 flex items-center text-left w-full h-full text-white p-8">
-        <h1 className="text-7xl font-bold">
+      <div className="relative flex flex-row w-full h-full justify-center">
+        <div className="z-10 text-center items-center text-white flex-row justify-center w-full ml-20">
+          {/* <h1 className="text-7xl font-bold">
           Proiectăm Viitorul <br /> Inteligent al Clădirilor
-        </h1>
+        </h1> */}
+          <HeroHeaderText />
+        </div>
+        <div className="absolute bottom-10 text-center z-10 items-center text-white flex-col">
+          <HeaderContacts />
+        </div>
       </div>
     </div>
   );

@@ -28,6 +28,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .panel {
+    width: 100%;
+    height: 100vh;
+    /* height: 100%; */
+  }
+}
 
 /* Color classes */
 .blue {
