@@ -25,7 +25,7 @@ function App() {
       <div className="app">
         <StackCollapseSections />
       </div>
-      <ParallaxContainer />
+      {/* <ParallaxContainer /> */}
       {/* <div className="w-full h-30 bg-[#242424] ">box for me</div> */}
       {/* <FlexSection /> */}
       {/* <div className="w-full h-30 bg-white">box for me</div> */}

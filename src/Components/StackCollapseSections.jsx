@@ -135,27 +135,34 @@ const StackCollapseSections = () => {
   }, []);
 
   return (
-    <div className="stack-collapse-container" ref={containerRef}>
-      {sectionData.map((section, index) => (
-        <section
-          key={`stack-section-${index}`}
-          ref={(el) => (sectionsRef.current[index] = el)}
-          className="stack-section h-screen w-full flex items-center justify-center relative bg-center"
-          style={{
-            backgroundImage: `url(${section.backgroundImage})`,
-            // zIndex: index + 1,
-          }}
-        >
-          {/* <div
+    <>
+      <div className="stack-collapse-container relative" ref={containerRef}>
+        {sectionData.map((section, index) => (
+          <section
+            key={`stack-section-${index}`}
+            ref={(el) => (sectionsRef.current[index] = el)}
+            className="stack-section h-screen w-full flex items-center justify-center relative bg-center"
+            style={{
+              backgroundImage: `url(${section.backgroundImage})`,
+              // zIndex: index + 1,
+            }}
+          >
+            <div className="absolute h-full w-full bg-gradient-to-t from-[rgba(36,36,36)] to-transparent z-1">
+              <h1 className=" absolute z-11 bottom-20 left-20 text-7xl">
+                this is a description
+              </h1>
+            </div>
+            {/* <div
             className="section-content"
             ref={(el) => (contentRefs.current[index] = el)}
           >
             <h2>{section.title}</h2>
             <p>{section.description}</p>
           </div> */}
-        </section>
-      ))}
-    </div>
+          </section>
+        ))}
+      </div>
+    </>
   );
 };
 
