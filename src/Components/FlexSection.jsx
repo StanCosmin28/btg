@@ -1,6 +1,6 @@
 export default function FlexSection() {
   return (
-    <div className="flex h-full bg-red justify-center items-center md:flex-row flex-col">
+    <div className="flex w-full h-full bg-red justify-center items-center md:flex-row flex-col">
       <div className="flex w-full h-full border-1 border-orange-400 justify-between flex-col">
         <div className="w-full p-8 bg-amber-300 h-full text-left">
           <h3>Despre Noi</h3>

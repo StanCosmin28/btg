@@ -56,9 +56,9 @@ const StackCollapseSections = () => {
         // Background size animation from bottom center
         gsap.fromTo(
           section,
-          { backgroundSize: "100vw auto" },
+          { backgroundSize: "cover" },
           {
-            backgroundSize: "110vw auto",
+            backgroundSize: "cover",
             ease: "linear",
             scrollTrigger: {
               trigger: section,
@@ -140,19 +140,19 @@ const StackCollapseSections = () => {
         <section
           key={`stack-section-${index}`}
           ref={(el) => (sectionsRef.current[index] = el)}
-          className="stack-section"
+          className="stack-section h-screen w-full flex items-center justify-center relative bg-center"
           style={{
             backgroundImage: `url(${section.backgroundImage})`,
             // zIndex: index + 1,
           }}
         >
-          <div
+          {/* <div
             className="section-content"
             ref={(el) => (contentRefs.current[index] = el)}
           >
             <h2>{section.title}</h2>
             <p>{section.description}</p>
-          </div>
+          </div> */}
         </section>
       ))}
     </div>

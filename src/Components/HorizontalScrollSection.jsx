@@ -67,8 +67,8 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
         {/* ${index % 2 === 0 ? "blue" : "red"} */}
         {/* <div className="box-container"> */}
         {/* <Box className={`box-${index + 1}`}>{index + 1}</Box> */}
-        <div className="">
-          <img src={images[index]} alt="" />
+        <div className="bg-center">
+          <img className="image-center" src={images[index]} alt="" />
           <div className="absolute text-left bottom-10 left-10 max-w-md">
             <h1 className="text-3xl">{images[index]}</h1>
             <p>
