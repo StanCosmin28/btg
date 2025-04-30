@@ -134,6 +134,8 @@ const StackCollapseSections = () => {
     };
   }, []);
 
+  /* render the photos also with the descriptions on them from the sectionData Array */
+
   return (
     <>
       <div className="stack-collapse-container relative" ref={containerRef}>
@@ -148,9 +150,18 @@ const StackCollapseSections = () => {
             }}
           >
             <div className="absolute h-full w-full bg-gradient-to-t from-[rgba(36,36,36)] to-transparent z-1">
-              <h1 className=" absolute z-11 bottom-20 left-20 text-7xl">
-                this is a description
-              </h1>
+              <div className="text-left absolute z-100 bottom-30 left-20 max-w-lg">
+                <div className="absolute h-[100%] w-[1px] bg-amber-300 -left-6"></div>
+                <h1 className="font-extrabold text-amber-300 text-7xl">
+                  PROIECTARE <br />
+                  ARHITECTURALA <br />
+                  INTELIGENTA
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  neque mollitia distinctio nemo?
+                </p>
+              </div>
             </div>
             {/* <div
             className="section-content"

@@ -32,6 +32,7 @@ const ParallaxContainer = () => {
       </Section> */}
 
       {/* Horizontal scroll section */}
+
       <HorizontalScrollSection ref={horizontalSectionRef} />
 
       {/* More vertical scroll sections */}

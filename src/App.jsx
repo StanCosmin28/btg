@@ -10,6 +10,8 @@ import Footer from "./Components/Footer";
 // import FlexSection from "./Components/FlexSection";
 // import SolutionsSection from "./Components/SolutionsSection";
 import AboutUs from "./Components/AboutUs";
+import TextFillOnScroll from "./Components/TextFillOnScroll";
+import SmartSolutions from "./Components/SmartSolutions";
 
 function App() {
   return (
@@ -19,13 +21,21 @@ function App() {
         <Navbar />
         <HeaderVideo />
       </Section>
+      {/* <main>
+        <TextFillOnScroll
+          text="BUILDING TECHNOLOGY GROUP"
+          fillColor="#0655D1"
+          borderColor="#000000"
+          borderWidth={1}
+        />
+      </main> */}
       {/* <SolutionsSection /> */}
       {/* About Us Section */}
       <AboutUs />
       <div className="app">
         <StackCollapseSections />
       </div>
-      {/* <ParallaxContainer /> */}
+
       {/* <div className="w-full h-30 bg-[#242424] ">box for me</div> */}
       {/* <FlexSection /> */}
       {/* <div className="w-full h-30 bg-white">box for me</div> */}
@@ -92,11 +102,18 @@ function App() {
       {/* <div className="app">
         <StackCollapseSections />
       </div> */}
-      <Section>
-        <div className="flex flex-col items-center justify-center bg-[#f5f5f5] min-h-screen text-[#242424]">
+      {/* <Section> */}
+      {/* <div className="flex flex-col items-center justify-center bg-[#f5f5f5] min-h-screen text-[#242424]">
           <h1 className="text-3xl font-bold">Expertiza</h1>
-        </div>
+        </div> */}
+      <Section>
+        <SmartSolutions />
       </Section>
+
+      <ParallaxContainer />
+
+      {/* </Section> */}
+
       {/* <ParallaxContainer /> */}
       {/* <SolutionsSection /> */}
       <Footer />

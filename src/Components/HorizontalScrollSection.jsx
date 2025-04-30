@@ -58,7 +58,8 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
     "src/assets/slider2.png",
   ];
   const renderMiniSections = () => {
-    return Array.from({ length: 3 }).map((_, index) => (
+    //I need an even number in order to work properly for the next section
+    return Array.from({ length: 4 }).map((_, index) => (
       <article
         key={`panel-${index}`}
         ref={addToPanelsRef}
