@@ -9,6 +9,7 @@ const data = {
     `${baseUrl}/slider0.png`,
     `${baseUrl}/slider1.png`,
     `${baseUrl}/slider2.png`,
+    `${baseUrl}/slider1.png`,
   ],
 };
 

@@ -65,7 +65,9 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
       <article
         key={`panel-${index}`}
         ref={addToPanelsRef}
-        className={`panel panel-${index + 1} relative`}
+        className={`panel panel-${
+          index + 1
+        } relative w-full h-screen overflow-hidden`}
       >
         {/* ${index % 2 === 0 ? "blue" : "red"} */}
         {/* <div className="box-container"> */}
