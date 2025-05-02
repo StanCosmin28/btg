@@ -12,15 +12,19 @@ import Footer from "./Components/Footer";
 import AboutUs from "./Components/AboutUs";
 import TextFillOnScroll from "./Components/TextFillOnScroll";
 import SmartSolutions from "./Components/SmartSolutions";
+import HeaderSection from "./Components/HeaderSection";
 
 function App() {
   return (
     <>
       {/* Header Section - Video + Contacts */}
       <Navbar />
-      <HeaderVideo />
+      {/* <HeaderVideo /> */}
+      <HeaderSection />
 
-      <TextFillOnScroll text="BUILDING TECHNOLOGY GROUP" fillColor="#0655D1" />
+      {/* <TextFillOnScroll /> */}
+
+      {/* <Reactbits/> */}
 
       {/* <SolutionsSection /> */}
       {/* About Us Section */}
@@ -29,9 +33,9 @@ function App() {
         <StackCollapseSections />
       </div>
 
-      <Section>
+      {/* <Section>
         <SmartSolutions />
-      </Section>
+      </Section> */}
       {/* <div className="w-full h-30 bg-[#242424] ">box for me</div> */}
       {/* <FlexSection /> */}
       {/* <div className="w-full h-30 bg-white">box for me</div> */}
@@ -112,9 +116,7 @@ function App() {
 
       {/* <ParallaxContainer /> */}
       {/* <SolutionsSection /> */}
-      <Section>
-        <SmartSolutions />
-      </Section>
+      <SmartSolutions />
       <Footer />
     </>
   );

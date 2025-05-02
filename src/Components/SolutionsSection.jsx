@@ -149,9 +149,9 @@ export default function SolutionsSection() {
             className="hidden md:block w-4 h-2/3 mr-8 relative cursor-pointer"
             onClick={handleProgressBarClick}
           >
-            <div className="absolute top-0 left-1/2 w-[2px] h-full bg-[#E5E7EB] transform -translate-x-1/2 rounded-full" />
+            <div className="absolute top-0  w-[2px] h-full bg-[#E5E7EB] left-1/2 transform -translate-x-1/2 rounded-full" />
             <motion.div
-              className="absolute left-1/2 w-4 h-4 bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2"
+              className="absolute  w-4 h-4 bg-white rounded-full left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               style={{ top: dotPosition }}
               transition={{
                 type: "spring",

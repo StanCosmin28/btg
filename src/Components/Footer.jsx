@@ -21,7 +21,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-10 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-10 sm:grid-cols-3 text-left">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Servicii

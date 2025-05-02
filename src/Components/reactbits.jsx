@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import data from "../Model/data";
 
-export default function TextFillOnScroll({
+const TextFillOnScroll = ({
   text = "Proiectăm Viitorul ",
   text2 = "Inteligent al Clădirilor",
   fillColor = "#ffffffeb",
@@ -16,7 +15,7 @@ export default function TextFillOnScroll({
   className = "",
   style = {},
   ...props
-}) {
+}) => {
   const sectionRef = useRef(null);
   const textRef = useRef(null);
   const maskRef = useRef(null);
@@ -69,20 +68,8 @@ export default function TextFillOnScroll({
       style={{ backgroundColor, ...style }}
       {...props}
     >
-      <div className="absolute w-full h-full top-0 ">
-        <div className="bg-black opacity-50 absolute w-full h-screen z-1"></div>
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute inset-0 object-cover w-full h-full"
-        >
-          <source src={data.video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
       <div className="relative text-left max-w-full px-4">
-        <div className="relative z-10">
+        <div className="relative">
           {/* Outline text (bottom layer) */}
           <h1
             ref={textRef}
@@ -134,4 +121,6 @@ export default function TextFillOnScroll({
       </div>
     </section>
   );
-}
+};
+
+export default TextFillOnScroll;
