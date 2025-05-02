@@ -29,6 +29,9 @@ function App() {
         <StackCollapseSections />
       </div>
 
+      <Section>
+        <SmartSolutions />
+      </Section>
       {/* <div className="w-full h-30 bg-[#242424] ">box for me</div> */}
       {/* <FlexSection /> */}
       {/* <div className="w-full h-30 bg-white">box for me</div> */}
