@@ -17,10 +17,8 @@ function App() {
   return (
     <>
       {/* Header Section - Video + Contacts */}
-      <Section>
-        <Navbar />
-        <HeaderVideo />
-      </Section>
+      <Navbar />
+      <HeaderVideo />
 
       <TextFillOnScroll text="BUILDING TECHNOLOGY GROUP" fillColor="#0655D1" />
 

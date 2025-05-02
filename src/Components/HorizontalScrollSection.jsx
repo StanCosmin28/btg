@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./parallaxStyles.css";
-import Box from "./Box";
+import data from "../Model/data";
+// import Box from "./Box";
 
 const HorizontalScrollSection = React.forwardRef((props, ref) => {
   const containerRef = useRef(null);
@@ -52,11 +53,12 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
     };
   }, []);
 
-  const images = [
-    "src/assets/slider0.png",
-    "src/assets/slider1.png",
-    "src/assets/slider2.png",
-  ];
+  // const images = [
+  //   "src/assets/slider0.png",
+  //   "src/assets/slider1.png",
+  //   "src/assets/slider2.png",
+  // ];
+  const { sliderImages } = data;
   const renderMiniSections = () => {
     //I need an even number in order to work properly for the next section
     return Array.from({ length: 4 }).map((_, index) => (
@@ -69,9 +71,9 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
         {/* <div className="box-container"> */}
         {/* <Box className={`box-${index + 1}`}>{index + 1}</Box> */}
         <div className="bg-center">
-          <img className="image-center" src={images[index]} alt="" />
+          <img className="image-center" src={sliderImages[index]} alt="" />
           <div className="absolute text-left bottom-10 left-10 max-w-md">
-            <h1 className="text-3xl">{images[index]}</h1>
+            <h1 className="text-3xl">{sliderImages[index]}</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
               adipisci architecto repudiandae non, veritatis labore!

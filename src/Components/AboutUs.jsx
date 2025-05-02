@@ -1,3 +1,4 @@
+import data from "../Model/data";
 export default function AboutUs() {
   return (
     <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row">
@@ -63,8 +64,9 @@ export default function AboutUs() {
         >
           <img
             className="w-full h-auto object-contain"
-            src="public/house-plan.svg"
+            src={data.housePlan}
             alt="House plan illustration"
+            loading="lazy"
           />
         </div>
       </div>

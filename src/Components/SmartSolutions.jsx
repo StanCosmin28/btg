@@ -1,3 +1,4 @@
+import data from "../Model/data";
 export default function SmartSolutions() {
   return (
     <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row bg-white">
@@ -57,7 +58,7 @@ export default function SmartSolutions() {
         >
           <img
             className="w-full h-auto object-contain"
-            src="public/services.svg"
+            src={data.services}
             alt="House plan illustration"
           />
         </div>
