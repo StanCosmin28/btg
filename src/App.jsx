@@ -35,6 +35,7 @@ function App() {
       <AboutUs />
       <HorizontalScrollSectionDemo />
 
+      <WhatWeOfferSection />
       {/* <div className="w-full h-50 bg-white lg:hidden"></div> */}
       {/* <Section>
         <SmartSolutions />

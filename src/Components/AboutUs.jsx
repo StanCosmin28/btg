@@ -1,9 +1,96 @@
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useCountUp } from "react-countup";
 import data from "../Model/data";
+
 export default function AboutUs() {
+  // Animation controls
+  const leftControls = useAnimation();
+  const rightControls = useAnimation();
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+  const isLeftInView = useInView(leftRef, {
+    once: true,
+    margin: "-50px 0px", // Trigger when element is 50px from viewport
+    threshold: 0.5, // Trigger when 50% of element is visible
+  });
+  const isRightInView = useInView(rightRef, {
+    once: true,
+    margin: "-50px 0px",
+    threshold: 0.5,
+  });
+
+  // Counter hooks
+  const { start: startExperience } = useCountUp({
+    ref: "experienceCounter",
+    end: 15,
+    duration: 5,
+    suffix: "+",
+  });
+  const { start: startProjects } = useCountUp({
+    ref: "projectsCounter",
+    end: 150,
+    duration: 5,
+    suffix: "+",
+  });
+  const { start: startCollaborations } = useCountUp({
+    ref: "collaborationsCounter",
+    end: 50,
+    duration: 5,
+    suffix: "+",
+  });
+
+  // Trigger animations and counters when in view
+  useEffect(() => {
+    if (isLeftInView) {
+      leftControls.start({ opacity: 1, y: 0 });
+      startExperience();
+      startProjects();
+      startCollaborations();
+    }
+  }, [
+    isLeftInView,
+    leftControls,
+    startExperience,
+    startProjects,
+    startCollaborations,
+  ]);
+
+  useEffect(() => {
+    if (isRightInView) {
+      rightControls.start({ opacity: 1, x: 0 });
+    }
+  }, [isRightInView, rightControls]);
+
+  // Animation variants
+  const leftVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
+  const rightVariants = {
+    hidden: { opacity: 0, x: 50 }, // Start from right
+    visible: {
+      opacity: 1,
+      x: 0, // Move to original position
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
+  };
+
   return (
     <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row">
       {/* Left Section: Text and Counters */}
-      <div className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-5">
+      <motion.div
+        ref={leftRef}
+        initial="hidden"
+        animate={leftControls}
+        variants={leftVariants}
+        className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-5"
+      >
         <div
           id="left"
           className="flex flex-col justify-between text-left space-y-6 md:space-y-8 lg:ml-10"
@@ -41,23 +128,35 @@ export default function AboutUs() {
           {/* Counters */}
           <div className="flex flex-row flex-wrap gap-4 p-4 justify-between text-center text-black">
             <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
-              <h3 className="text-5xl font-bold">15+</h3>
+              <h3 className="text-5xl font-bold" id="experienceCounter">
+                0
+              </h3>
               <p className="text-sm">Ani de experienta</p>
             </div>
             <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
-              <h3 className="text-5xl font-bold">150+</h3>
+              <h3 className="text-5xl font-bold" id="projectsCounter">
+                0
+              </h3>
               <p className="text-sm">Proiecte livrate cu succes</p>
             </div>
             <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
-              <h3 className="text-5xl font-bold">50+</h3>
+              <h3 className="text-5xl font-bold" id="collaborationsCounter">
+                0
+              </h3>
               <p className="text-sm">Viitoare colaborari</p>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Right Section: Image */}
-      <div className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen justify-center items-center p-4">
+      <motion.div
+        ref={rightRef}
+        initial="hidden"
+        animate={rightControls}
+        variants={rightVariants}
+        className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen justify-center items-center p-4"
+      >
         <div
           id="right"
           className="flex justify-center items-center w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px]"
@@ -69,7 +168,7 @@ export default function AboutUs() {
             loading="lazy"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
