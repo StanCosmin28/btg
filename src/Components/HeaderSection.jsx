@@ -13,7 +13,7 @@ export default function HeaderSection({
   borderColor = "#ffb900",
   borderWidth = 1,
   backgroundColor = "#060606",
-  textSize = "text-4xl sm:text-5xl md:text-6xl lg:text-9xl",
+  textSize = "text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[13rem]",
   fontFamily = "DM Sans, sans-serif",
   showProgress = true,
   className = "",
@@ -85,7 +85,7 @@ export default function HeaderSection({
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="relative text-left max-w-full px-4 uppercase ml-10">
+        <div className="relative text-left max-w-full px-4 uppercase ml-5 md:ml-10">
           <div className="relative z-10">
             {/* Outline text (bottom layer) */}
             <h1

@@ -11,6 +11,9 @@ const data = {
     `${baseUrl}/slider2.png`,
     `${baseUrl}/slider1.png`,
   ],
+  icon1: `${baseUrl}/icon1.svg`,
+  icon2: `${baseUrl}/icon2.svg`,
+  icon3: `${baseUrl}/icon2.svg`,
 };
 
 export default data;

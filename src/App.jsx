@@ -15,28 +15,41 @@ import SmartSolutions from "./Components/SmartSolutions";
 import HeaderSection from "./Components/HeaderSection";
 import TracingBeamDemo from "./Components/TracingBeamDemo";
 import HorizontalScrollSectionDemo from "./Components/HorizontalScrollDemo";
+// import FinalTimeline from "./Components/FinalTimeline";
+// import VerticalTimeline from "./Components/VericalTimeline";
 
 function App() {
   return (
     <>
       {/* Header Section - Video + Contacts */}
       <Navbar />
-      {/* <HeaderVideo /> */}
       <HeaderSection />
-      <HorizontalScrollSectionDemo />
-
-      {/* <TextFillOnScroll /> */}
-
-      {/* <Reactbits/> */}
-
-      {/* <SolutionsSection /> */}
-      {/* About Us Section */}
-      <TracingBeamDemo />
+      {/* <VerticalTimeline /> */}
       <AboutUs />
       <div className="app">
         <StackCollapseSections />
       </div>
-
+      {/* <FinalTimeline /> */}
+      <Section>
+        <SmartSolutions />
+      </Section>
+      {/* <Section> */}
+      {/* <TracingBeamDemo /> */}
+      {/* </Section> */}
+      {/* <Section></Section> */}
+      {/* <Section> */}
+      {/* <SmartSolutions /> */}
+      {/* </Section> */}
+      {/* <Section></Section> */}
+      <HorizontalScrollSectionDemo />
+      {/* <HeaderVideo /> */}
+      {/* <TextFillOnScroll /> */}
+      {/* <Reactbits/> */}
+      {/* <SolutionsSection /> */}
+      {/* About Us Section */}
+      {/* <div className="app">
+        <StackCollapseSections />
+      </div> */}
       {/* <Section>
         <SmartSolutions />
       </Section> */}
@@ -113,14 +126,11 @@ function App() {
       {/* <Section>
         <SmartSolutions />
       </Section> */}
-
-      <Section>
+      {/* <Section>
         <SmartSolutions />
-      </Section>
+      </Section> */}
       {/* <ParallaxContainer /> */}
-
       {/* </Section> */}
-
       {/* <ParallaxContainer /> */}
       {/* <SolutionsSection /> */}
       <SmartSolutions />
