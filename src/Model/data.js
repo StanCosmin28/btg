@@ -13,7 +13,7 @@ const data = {
   ],
   icon1: `${baseUrl}/icon1.svg`,
   icon2: `${baseUrl}/icon2.svg`,
-  icon3: `${baseUrl}/icon2.svg`,
+  icon3: `${baseUrl}/icon3.svg`,
 };
 
 export default data;

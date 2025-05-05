@@ -3,10 +3,10 @@ export default function AboutUs() {
   return (
     <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row">
       {/* Left Section: Text and Counters */}
-      <div className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-4 sm:p-6 md:p-8">
+      <div className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-5">
         <div
           id="left"
-          className="flex flex-col justify-between text-left space-y-6 md:space-y-8 lg:ml-20"
+          className="flex flex-col justify-between text-left space-y-6 md:space-y-8 lg:ml-10"
         >
           {/* Header */}
           <div className="flex flex-col">

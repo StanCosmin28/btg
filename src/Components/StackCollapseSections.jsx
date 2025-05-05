@@ -10,20 +10,23 @@ const StackCollapseSections = () => {
 
   const sectionData = [
     {
-      title: "Section 1",
-      description: "Discover the journey",
+      titleLines: ["PROIECTARE", "ARHITECTURALA", "INTELIGENTA"],
+      description:
+        "Creăm planuri care combină estetica, funcționalitatea și eficiența energetică, cu soluții personalizate pentru fiecare proiect.",
       backgroundImage:
         "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Section 2",
-      description: "Explore new horizons",
+      titleLines: ["OPTIMIZARE", "EFICIENTA"],
+      description:
+        "Reducem consumul de energie și maximizăm utilizarea spațiului, oferind soluții durabile și economice.",
       backgroundImage:
         "https://plus.unsplash.com/premium_photo-1681989486976-9ec9d2eac57a?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Section 3",
-      description: "Embrace the adventure",
+      titleLines: ["SISTEME BMS", "INTEGRATE"],
+      description:
+        "Integrarea tehnologiilor avansate asigură control total asupra locuinței, cu suport continuu pe toată durata proiectului.",
       backgroundImage:
         "https://images.unsplash.com/photo-1533378890784-b2a5b0a59d40?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -74,7 +77,6 @@ const StackCollapseSections = () => {
         ScrollTrigger.create({
           trigger: section,
           start: "top top",
-          // end: `+=${window.innerHeight * 1.2}`, // Extended pinning for stacking
           pin: true,
           pinSpacing: false,
           snap: {
@@ -134,8 +136,6 @@ const StackCollapseSections = () => {
     };
   }, []);
 
-  /* render the photos also with the descriptions on them from the sectionData Array */
-
   return (
     <>
       <div className="stack-collapse-container relative" ref={containerRef}>
@@ -146,30 +146,24 @@ const StackCollapseSections = () => {
             className="stack-section h-screen w-full flex items-center justify-center relative bg-center"
             style={{
               backgroundImage: `url(${section.backgroundImage})`,
-              // zIndex: index + 1,
             }}
           >
             <div className="absolute h-full w-full bg-gradient-to-t from-[rgba(36,36,36)] to-transparent z-1">
-              <div className="text-left absolute z-100 md:bottom-30 bottom-15 md:left-20 left-10 max-w-screen md:max-w-sm lg:max-w-lg">
+              <div className="text-left absolute z-100 md:bottom-20 bottom-15 md:left-20 left-10 max-w-screen md:max-w-sm lg:max-w-lg">
                 <div className="absolute h-[100%] w-[1px] bg-amber-300 -left-6"></div>
                 <h1 className="font-extrabold text-amber-300 lg:text-7xl text-4xl">
-                  PROIECTARE <br />
-                  ARHITECTURALA <br />
-                  INTELIGENTA
+                  {section.titleLines.map((line, lineIndex) => (
+                    <React.Fragment key={lineIndex}>
+                      {line}
+                      {lineIndex < section.titleLines.length - 1 && <br />}
+                    </React.Fragment>
+                  ))}
                 </h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  neque mollitia distinctio nemo?
+                <p className="sm:max-w-[350px] md:max-w-[600px]">
+                  {section.description}
                 </p>
               </div>
             </div>
-            {/* <div
-            className="section-content"
-            ref={(el) => (contentRefs.current[index] = el)}
-          >
-            <h2>{section.title}</h2>
-            <p>{section.description}</p>
-          </div> */}
           </section>
         ))}
       </div>

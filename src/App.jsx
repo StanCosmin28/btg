@@ -13,7 +13,7 @@ import AboutUs from "./Components/AboutUs";
 // import TextFillOnScroll from "./Components/TextFillOnScroll";
 import SmartSolutions from "./Components/SmartSolutions";
 import HeaderSection from "./Components/HeaderSection";
-import TracingBeamDemo from "./Components/TracingBeamDemo";
+// import TracingBeamDemo from "./Components/TracingBeamDemo";
 import HorizontalScrollSectionDemo from "./Components/HorizontalScrollDemo";
 // import FinalTimeline from "./Components/FinalTimeline";
 // import VerticalTimeline from "./Components/VericalTimeline";
@@ -24,15 +24,16 @@ function App() {
       {/* Header Section - Video + Contacts */}
       <Navbar />
       <HeaderSection />
-      {/* <VerticalTimeline /> */}
       <AboutUs />
       <div className="app">
         <StackCollapseSections />
       </div>
-      {/* <FinalTimeline /> */}
       <Section>
         <SmartSolutions />
       </Section>
+      <Section></Section>
+      {/* <VerticalTimeline /> */}
+      {/* <FinalTimeline /> */}
       {/* <Section> */}
       {/* <TracingBeamDemo /> */}
       {/* </Section> */}
@@ -133,7 +134,7 @@ function App() {
       {/* </Section> */}
       {/* <ParallaxContainer /> */}
       {/* <SolutionsSection /> */}
-      <SmartSolutions />
+      {/* <SmartSolutions /> */}
       <Footer />
     </>
   );
