@@ -2,17 +2,19 @@
 // import viteLogo from "/vite.svg";
 import Navbar from "./Components/Navbar";
 import "./App.css";
-import HeaderVideo from "./Components/HeaderVideo";
+// import HeaderVideo from "./Components/HeaderVideo";
 import Section from "./Components/Section";
 import StackCollapseSections from "./Components/StackCollapseSections";
-import ParallaxContainer from "./Components/ParallaxContainer";
+// import ParallaxContainer from "./Components/ParallaxContainer";
 import Footer from "./Components/Footer";
 // import FlexSection from "./Components/FlexSection";
-// import SolutionsSection from "./Components/SolutionsSection";
+import SolutionsSection from "./Components/SolutionsSection";
 import AboutUs from "./Components/AboutUs";
-import TextFillOnScroll from "./Components/TextFillOnScroll";
+// import TextFillOnScroll from "./Components/TextFillOnScroll";
 import SmartSolutions from "./Components/SmartSolutions";
 import HeaderSection from "./Components/HeaderSection";
+import TracingBeamDemo from "./Components/TracingBeamDemo";
+import HorizontalScrollSectionDemo from "./Components/HorizontalScrollDemo";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
       <Navbar />
       {/* <HeaderVideo /> */}
       <HeaderSection />
+      <HorizontalScrollSectionDemo />
 
       {/* <TextFillOnScroll /> */}
 
@@ -28,6 +31,7 @@ function App() {
 
       {/* <SolutionsSection /> */}
       {/* About Us Section */}
+      <TracingBeamDemo />
       <AboutUs />
       <div className="app">
         <StackCollapseSections />
@@ -105,12 +109,15 @@ function App() {
       {/* <Section> */}
       {/* <div className="flex flex-col items-center justify-center bg-[#f5f5f5] min-h-screen text-[#242424]">
           <h1 className="text-3xl font-bold">Expertiza</h1>
-        </div> */}
+          </div> */}
       {/* <Section>
         <SmartSolutions />
       </Section> */}
 
-      <ParallaxContainer />
+      <Section>
+        <SmartSolutions />
+      </Section>
+      {/* <ParallaxContainer /> */}
 
       {/* </Section> */}
 
