@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HeaderContacts from "./HeaderContacts";
 import data from "../Model/data";
+import "./header.css";
 
 export default function HeaderSection({
   //   text = "Proiectăm Viitorul",
@@ -13,8 +14,8 @@ export default function HeaderSection({
   borderColor = "#ffb900",
   borderWidth = 1,
   backgroundColor = "#060606",
-  textSize = "text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[13rem]",
-  fontFamily = "DM Sans, sans-serif",
+  textSize = "text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[7rem]",
+  fontFamily = "",
   showProgress = true,
   className = "",
   style = {},
@@ -90,7 +91,7 @@ export default function HeaderSection({
             {/* Outline text (bottom layer) */}
             <h1
               ref={textRef}
-              className={`font-bold break-words z-10 ${textSize}`}
+              className={`special-font font-bold break-words z-10 ${textSize}`}
               style={{
                 color: "transparent",
                 WebkitTextStroke: `${borderWidth}px ${borderColor}`,
@@ -104,7 +105,7 @@ export default function HeaderSection({
             </h1>
             <h1
               ref={maskRef}
-              className={`font-bold absolute top-0 left-0 z-20 break-words ${textSize}`}
+              className={`special-font font-bold absolute top-0 left-0 z-20 break-words ${textSize}`}
               style={{
                 color: fillColor,
                 clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",

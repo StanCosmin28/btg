@@ -15,6 +15,7 @@ import SmartSolutions from "./Components/SmartSolutions";
 import HeaderSection from "./Components/HeaderSection";
 // import TracingBeamDemo from "./Components/TracingBeamDemo";
 import HorizontalScrollSectionDemo from "./Components/HorizontalScrollDemo";
+import WhatWeOfferSection from "./Components/WhatWeOfferSection";
 // import FinalTimeline from "./Components/FinalTimeline";
 // import VerticalTimeline from "./Components/VericalTimeline";
 
@@ -25,13 +26,19 @@ function App() {
       <Navbar />
       <HeaderSection />
       <AboutUs />
-      <div className="app">
-        <StackCollapseSections />
-      </div>
+      {/* <div className="app"> */}
+      <StackCollapseSections />
       <Section>
         <SmartSolutions />
       </Section>
-      <div className="w-full h-50 bg-white lg:hidden"></div>
+      <WhatWeOfferSection />
+      <AboutUs />
+      <HorizontalScrollSectionDemo />
+
+      {/* <div className="w-full h-50 bg-white lg:hidden"></div> */}
+      {/* <Section>
+        <SmartSolutions />
+      </Section> */}
       {/* <Section></Section> */}
       {/* <VerticalTimeline /> */}
       {/* <FinalTimeline /> */}
@@ -43,7 +50,7 @@ function App() {
       {/* <SmartSolutions /> */}
       {/* </Section> */}
       {/* <Section></Section> */}
-      <HorizontalScrollSectionDemo />
+
       {/* <HeaderVideo /> */}
       {/* <TextFillOnScroll /> */}
       {/* <Reactbits/> */}

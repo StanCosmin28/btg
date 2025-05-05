@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import "./parallaxStyles.css";
 import data from "../Model/data";
 
-const HorizontalScrollSection = React.forwardRef((props, ref) => {
+const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
   const containerRef = useRef(null);
   const panelsRef = useRef([]);
   const scrollTweenRef = useRef(null);
@@ -52,7 +52,7 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
     };
   }, []);
 
-  const { sliderImages } = data;
+  const { sliderImages, sliderDescription } = data;
   const renderPanels = () => {
     return Array.from({ length: 2 }).map((_, index) => (
       <article
@@ -70,11 +70,8 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
             />
             <div className="text-overlay absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
               <h1 className="text-xl md:text-2xl font-bold text-white">
-                Work {index * 2 + 1}
+                {sliderDescription[index * 2] || "No Description"}
               </h1>
-              <p className="text-sm md:text-base text-white">
-                Description of work {index * 2 + 1}
-              </p>
             </div>
           </div>
           {/* Second Image */}
@@ -87,12 +84,9 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
               alt={`Work ${index * 2 + 2}`}
             />
             <div className="text-overlay absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-              <h1 className="text-xl md:text-2xl font-bold text-white">
-                Work {index * 2 + 2}
-              </h1>
-              <p className="text-sm md:text-base text-white">
-                Description of work {index * 2 + 2}
-              </p>
+              <h3 className="text-xl md:text-2xl font-bold text-white">
+                {sliderDescription[index * 2 + 1] || "No Description"}
+              </h3>
             </div>
           </div>
         </div>
@@ -107,4 +101,4 @@ const HorizontalScrollSection = React.forwardRef((props, ref) => {
   );
 });
 
-export default HorizontalScrollSection;
+export default HorizontalScrollSectionDemo;
