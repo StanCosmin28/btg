@@ -31,7 +31,8 @@ function App() {
       <Section>
         <SmartSolutions />
       </Section>
-      <Section></Section>
+      <div className="w-full h-50 bg-white lg:hidden"></div>
+      {/* <Section></Section> */}
       {/* <VerticalTimeline /> */}
       {/* <FinalTimeline /> */}
       {/* <Section> */}

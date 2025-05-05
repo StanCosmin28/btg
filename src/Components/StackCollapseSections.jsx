@@ -149,7 +149,7 @@ const StackCollapseSections = () => {
             }}
           >
             <div className="absolute h-full w-full bg-gradient-to-t from-[rgba(36,36,36)] to-transparent z-1">
-              <div className="text-left absolute z-100 md:bottom-20 bottom-15 md:left-20 left-10 max-w-screen md:max-w-sm lg:max-w-lg">
+              <div className="text-left absolute z-100 md:bottom-20 bottom-15 md:left-20 left-10  md:max-w-sm lg:max-w-lg max-w-[320px]">
                 <div className="absolute h-[100%] w-[1px] bg-amber-300 -left-6"></div>
                 <h1 className="font-extrabold text-amber-300 lg:text-7xl text-4xl">
                   {section.titleLines.map((line, lineIndex) => (

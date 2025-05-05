@@ -33,18 +33,18 @@ export default function SmartSolutions() {
           </div>
 
           {/* Icons */}
-          <div className="flex flex-row flex-wrap md:gap-6 p-4 justify-between text-center text-black sm:mx-auto sm:gap-10 w-full md:max-w-[600px]">
-            <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
+          <div className="flex flex-row flex-wrap md:gap-12 xl:gap-25 text-center text-black sm:gap-10 w-full md:max-w-[600px] justify-center">
+            <div className=" p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
               <img className="w-16" src={data.icon1} alt="" />
               {/* <h3 className="text-5xl font-bold">icon</h3> */}
               <p className="text-sm font-bold">EXPERTIZĂ</p>
             </div>
-            <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
+            <div className=" p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
               <img className="w-16" src={data.icon2} alt="" />
               {/* <h3 className="text-5xl font-bold">icon</h3> */}
               <p className="text-sm font-bold">PRECIZIE</p>
             </div>
-            <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
+            <div className=" p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
               <img className="w-16" src={data.icon3} alt="" />
               {/* <h3 className="text-5xl font-bold">icon</h3> */}
               <p className="text-sm font-bold">FIABILITATE</p>
