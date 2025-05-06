@@ -138,7 +138,10 @@ const StackCollapseSections = () => {
 
   return (
     <>
-      <div className="stack-collapse-container relative" ref={containerRef}>
+      <div
+        className="stack-collapse-container relative pt-20"
+        ref={containerRef}
+      >
         {sectionData.map((section, index) => (
           <section
             key={`stack-section-${index}`}

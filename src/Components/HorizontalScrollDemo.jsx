@@ -19,6 +19,7 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
 
     const totalPanels = panelsRef.current.length;
     const totalWidth = 50 * totalPanels;
+    //if mobile => 75 || if tablet or above 50
 
     // Force recalculate width on resize
     const handleResize = () => {

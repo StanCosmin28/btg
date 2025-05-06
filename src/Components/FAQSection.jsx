@@ -44,7 +44,7 @@ export default function FAQSection() {
 
   return (
     <div
-      className="min-h-screen bg-white flex justify-center items-center p-8"
+      className=" bg-white flex justify-center items-center p-8 flex-col gap-10"
       onClick={handleOutsideClick}
     >
       <div className="w-11/12 max-w-3xl mx-auto">
@@ -106,7 +106,7 @@ export default function FAQSection() {
           ))}
         </ul>
       </div>
-      <button className="p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white transition-all hover:scale-105 rounded-lg cursor-pointer bg-blue-800">
+      <button className="transition-all duration-300 hover:scale-102 max-w-3xl w-full p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white rounded-lg cursor-pointer bg-[#0655D1]">
         Contactează-ne
       </button>
     </div>

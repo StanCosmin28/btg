@@ -129,7 +129,7 @@ export default function AboutUs() {
           <div className="flex flex-row flex-wrap gap-4 p-4 justify-between text-center text-black">
             <div className="flex-1 min-w-[50px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
               <h3
-                className=" text-4xl sm:text-5xl font-bold"
+                className=" text-xl sm:text-5xl font-bold"
                 id="experienceCounter"
               >
                 15
@@ -138,7 +138,7 @@ export default function AboutUs() {
             </div>
             <div className="flex-1 min-w-[50px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
               <h3
-                className=" text-4xl sm:text-5xl font-bold"
+                className=" text-xl sm:text-5xl font-bold"
                 id="projectsCounter"
               >
                 150
@@ -147,7 +147,7 @@ export default function AboutUs() {
             </div>
             <div className="flex-1 min-w-[50px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
               <h3
-                className=" text-4xl sm:text-5xl font-bold"
+                className=" text-xl sm:text-5xl font-bold"
                 id="collaborationsCounter"
               >
                 50

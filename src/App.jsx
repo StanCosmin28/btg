@@ -18,6 +18,7 @@ import HorizontalScrollSectionDemo from "./Components/HorizontalScrollDemo";
 import WhatWeOfferSection from "./Components/WhatWeOfferSection";
 import Expertiza from "./Components/Expertiza";
 import FAQSection from "./Components/FAQSection";
+import BlogCard from "./Components/BlogCard";
 // import FinalTimeline from "./Components/FinalTimeline";
 // import VerticalTimeline from "./Components/VericalTimeline";
 
@@ -33,10 +34,8 @@ function App() {
       <Section>
         <SmartSolutions />
       </Section>
-      <WhatWeOfferSection />
 
       <HorizontalScrollSectionDemo />
-
       <WhatWeOfferSection />
       <Expertiza />
       {/* <div className="w-full h-50 bg-white lg:hidden"></div> */}
@@ -148,6 +147,7 @@ function App() {
       {/* <SolutionsSection /> */}
       {/* <SmartSolutions /> */}
       <FAQSection />
+      <BlogCard />
       <Footer />
     </>
   );
