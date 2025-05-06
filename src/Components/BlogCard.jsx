@@ -141,10 +141,10 @@ export default function BlogCarousel({ posts = samplePosts }) {
     : true;
 
   return (
-    <section className="py-8 px-4 md:px-8 bg-white">
+    <section className="py-8 px-4 md:px-8 my-30">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+          <h2 className="text-2xl md:text-3xl font-bold text-amber-400">
             Ultimele Noutăți
           </h2>
           <div className="flex space-x-2">

@@ -44,10 +44,10 @@ export default function FAQSection() {
 
   return (
     <div
-      className=" bg-white flex justify-center items-center p-8 flex-col gap-10"
+      className=" flex justify-center items-center p-8 flex-col gap-10 my-30"
       onClick={handleOutsideClick}
     >
-      <div className="w-11/12 max-w-3xl mx-auto">
+      <div className="w-11/12 max-w-5xl mx-auto">
         <h1 className="text-3xl text-center font-semibold text-gray-800 mb-8">
           Nu ai găsit răspuns la întrebarea ta?
         </h1>
@@ -59,8 +59,8 @@ export default function FAQSection() {
               className={`bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg`}
             >
               <div
-                className={`p-5 cursor-pointer flex justify-between items-center font-medium text-gray-700 hover:bg-gray-50 transition-colors ${
-                  activeIndex === index ? "bg-gray-100" : ""
+                className={`p-5 cursor-pointer flex justify-between items-left font-medium text-gray-700 hover:bg-blue-100 transition-colors ${
+                  activeIndex === index ? "bg-blue-200" : ""
                 }`}
                 onClick={(e) => {
                   e.stopPropagation();
@@ -98,7 +98,7 @@ export default function FAQSection() {
                 }`}
                 onClick={(e) => e.stopPropagation()}
               >
-                <p className="p-5 pt-0 text-gray-600 leading-relaxed">
+                <p className="p-5 pt-0 text-gray-600 leading-relaxed text-left">
                   {item.answer}
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default function FAQSection() {
           ))}
         </ul>
       </div>
-      <button className="transition-all duration-300 hover:scale-102 max-w-3xl w-full p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white rounded-lg cursor-pointer bg-[#0655D1]">
+      <button className="transition-all duration-300 hover:scale-102 max-w-5xl w-full p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white rounded-lg cursor-pointer bg-[#0655D1]">
         Contactează-ne
       </button>
     </div>

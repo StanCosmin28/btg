@@ -1,6 +1,5 @@
 import React from "react";
 import data from "../Model/data";
-import { transform } from "framer-motion";
 
 const Expertiza = () => {
   return (

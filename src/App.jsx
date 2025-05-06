@@ -19,6 +19,7 @@ import WhatWeOfferSection from "./Components/WhatWeOfferSection";
 import Expertiza from "./Components/Expertiza";
 import FAQSection from "./Components/FAQSection";
 import BlogCard from "./Components/BlogCard";
+import CTAButtonSection from "./Components/CTASection";
 // import FinalTimeline from "./Components/FinalTimeline";
 // import VerticalTimeline from "./Components/VericalTimeline";
 
@@ -148,6 +149,7 @@ function App() {
       {/* <SmartSolutions /> */}
       <FAQSection />
       <BlogCard />
+      <CTAButtonSection />
       <Footer />
     </>
   );
