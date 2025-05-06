@@ -16,6 +16,7 @@ import HeaderSection from "./Components/HeaderSection";
 // import TracingBeamDemo from "./Components/TracingBeamDemo";
 import HorizontalScrollSectionDemo from "./Components/HorizontalScrollDemo";
 import WhatWeOfferSection from "./Components/WhatWeOfferSection";
+import Expertiza from "./Components/Expertiza";
 // import FinalTimeline from "./Components/FinalTimeline";
 // import VerticalTimeline from "./Components/VericalTimeline";
 
@@ -32,10 +33,10 @@ function App() {
         <SmartSolutions />
       </Section>
       <WhatWeOfferSection />
-      <AboutUs />
       <HorizontalScrollSectionDemo />
 
       <WhatWeOfferSection />
+      <Expertiza />
       {/* <div className="w-full h-50 bg-white lg:hidden"></div> */}
       {/* <Section>
         <SmartSolutions />

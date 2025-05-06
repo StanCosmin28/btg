@@ -4,6 +4,7 @@ const data = {
   logo: `${baseUrl}/btg-logo.svg`,
   video: `${baseUrl}/btg-video.mp4`,
   housePlan: `${baseUrl}/house-plan.svg`,
+  housePlan2: `${baseUrl}/house-plan2.png`,
   services: `${baseUrl}/services.svg`,
   sliderImages: [
     `${baseUrl}/slider0.png`,

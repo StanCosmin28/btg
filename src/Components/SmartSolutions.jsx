@@ -123,7 +123,7 @@ export default function SmartSolutions() {
                 transition: { staggerChildren: 0.2 },
               },
             }}
-            className="flex flex-row flex-wrap md:gap-12 xl:gap-25 text-center text-black sm:gap-10 w-full md:max-w-[600px] justify-center"
+            className="mt-10 flex flex-row flex-wrap md:gap-12 xl:gap-25 text-center text-black sm:gap-10 w-full md:max-w-[600px] justify-center"
           >
             <motion.div
               variants={iconVariants}
