@@ -74,7 +74,7 @@ export default function SmartSolutions() {
   };
 
   return (
-    <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row p-5 bg-white">
+    <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row px-10 bg-white">
       {/* Left Section: Text and Icons */}
       <div className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-4 sm:p-6 md:p-8">
         <div

@@ -34,6 +34,7 @@ function App() {
         <SmartSolutions />
       </Section>
       <WhatWeOfferSection />
+
       <HorizontalScrollSectionDemo />
 
       <WhatWeOfferSection />

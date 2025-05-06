@@ -82,18 +82,18 @@ export default function AboutUs() {
   };
 
   return (
-    <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row">
+    <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row p-5">
       {/* Left Section: Text and Counters */}
       <motion.div
         ref={leftRef}
         initial="hidden"
         animate={leftControls}
         variants={leftVariants}
-        className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-5"
+        className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-5 xl:ml-15"
       >
         <div
           id="left"
-          className="flex flex-col justify-between text-left space-y-6 md:space-y-8 lg:ml-10"
+          className="flex flex-col justify-between text-left space-y-6 md:space-y-8"
         >
           {/* Header */}
           <div className="flex flex-col">
@@ -127,21 +127,30 @@ export default function AboutUs() {
 
           {/* Counters */}
           <div className="flex flex-row flex-wrap gap-4 p-4 justify-between text-center text-black">
-            <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
-              <h3 className="text-5xl font-bold" id="experienceCounter">
-                0
+            <div className="flex-1 min-w-[50px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
+              <h3
+                className=" text-4xl sm:text-5xl font-bold"
+                id="experienceCounter"
+              >
+                15
               </h3>
               <p className="text-sm">Ani de experienta</p>
             </div>
-            <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
-              <h3 className="text-5xl font-bold" id="projectsCounter">
-                0
+            <div className="flex-1 min-w-[50px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
+              <h3
+                className=" text-4xl sm:text-5xl font-bold"
+                id="projectsCounter"
+              >
+                150
               </h3>
               <p className="text-sm">Proiecte livrate cu succes</p>
             </div>
-            <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
-              <h3 className="text-5xl font-bold" id="collaborationsCounter">
-                0
+            <div className="flex-1 min-w-[50px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
+              <h3
+                className=" text-4xl sm:text-5xl font-bold"
+                id="collaborationsCounter"
+              >
+                50
               </h3>
               <p className="text-sm">Viitoare colaborari</p>
             </div>
@@ -159,7 +168,7 @@ export default function AboutUs() {
       >
         <div
           id="right"
-          className="flex justify-center items-center w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px]"
+          className="flex justify-center items-center w-full max-w-[300px] sm:max-w-[350px] md:max-w-[500px]"
         >
           <img
             className="w-full h-auto object-contain"

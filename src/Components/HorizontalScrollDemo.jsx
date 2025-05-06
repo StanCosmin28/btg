@@ -18,7 +18,7 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
     if (panelsRef.current.length === 0 || !containerRef.current) return;
 
     const totalPanels = panelsRef.current.length;
-    const totalWidth = 100 * totalPanels;
+    const totalWidth = 50 * totalPanels;
 
     // Force recalculate width on resize
     const handleResize = () => {
@@ -62,7 +62,7 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
       >
         <div className="image-grid flex justify-center items-center gap-2 w-full h-full px-1">
           {/* First Image */}
-          <div className="image-container relative flex-1 h-full hover:blur-sm">
+          <div className="image-container relative flex-1 h-full">
             <img
               className="w-full h-full object-cover"
               src={sliderImages[index * 2] || "https://via.placeholder.com/600"}
@@ -75,7 +75,7 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
             </div>
           </div>
           {/* Second Image */}
-          <div className="image-container relative flex-1 h-full  hover:blur-sm">
+          <div className="image-container relative flex-1 h-full ">
             <img
               className="w-full h-full object-cover"
               src={
