@@ -2,13 +2,13 @@ import data from "../Model/data";
 export default function CTAButtonSection() {
   return (
     <div
-      className="w-full min-h-[500px] bg-black flex justify-center"
+      className="w-full min-h-[500px] flex justify-center items-center"
       style={{
         // backgroundSize: "auto 100%",
         backgroundImage: `url(${data.ctaSection})`,
       }}
     >
-      <div className="flex flex-col justify-center ">
+      <div className="flex flex-col gap-8 justify-between">
         <h1 className="text-5xl">
           Ești gata să faci primul pas spre <br />
           un proiect bine planificat?{" "}
