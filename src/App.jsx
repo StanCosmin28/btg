@@ -17,6 +17,7 @@ import HeaderSection from "./Components/HeaderSection";
 import HorizontalScrollSectionDemo from "./Components/HorizontalScrollDemo";
 import WhatWeOfferSection from "./Components/WhatWeOfferSection";
 import Expertiza from "./Components/Expertiza";
+import FAQSection from "./Components/FAQSection";
 // import FinalTimeline from "./Components/FinalTimeline";
 // import VerticalTimeline from "./Components/VericalTimeline";
 
@@ -145,6 +146,7 @@ function App() {
       {/* <ParallaxContainer /> */}
       {/* <SolutionsSection /> */}
       {/* <SmartSolutions /> */}
+      <FAQSection />
       <Footer />
     </>
   );
