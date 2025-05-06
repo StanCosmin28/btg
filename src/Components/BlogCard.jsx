@@ -141,7 +141,7 @@ export default function BlogCarousel({ posts = samplePosts }) {
     : true;
 
   return (
-    <section className="py-8 px-4 md:px-8 my-30">
+    <section className="py-8 px-4 md:px-8 mt-30 mb-10">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl md:text-3xl font-bold text-amber-400">
