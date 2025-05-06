@@ -1,8 +1,12 @@
+import data from "../Model/data";
 export default function CTAButtonSection() {
   return (
     <div
-      className="w-full min-h-[500px] bg-black flex justify-center
-    "
+      className="w-full min-h-[500px] bg-black flex justify-center"
+      style={{
+        // backgroundSize: "auto 100%",
+        backgroundImage: `url(${data.ctaSection})`,
+      }}
     >
       <div className="flex flex-col justify-center ">
         <h1 className="text-5xl">
