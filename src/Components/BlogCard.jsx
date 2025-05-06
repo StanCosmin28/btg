@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import samplePosts from "../Model/blogData";
 
 // BlogCard Component
 const BlogCard = ({ post }) => {
@@ -48,60 +49,6 @@ const BlogCard = ({ post }) => {
   );
 };
 
-// Sample blog posts data
-const samplePosts = [
-  {
-    id: 1,
-    image:
-      "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Proiectare sustenabilă pentru clădiri moderne",
-    description:
-      "Aflați cum să integrați soluții ecologice în proiectele arhitecturale pentru eficiență energetică maximă.",
-    date: "12 Mai 2025",
-    link: "/blog/proiectare-sustenabila",
-  },
-  {
-    id: 2,
-    image:
-      "https://images.unsplash.com/photo-1501889088093-90b27410d97e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Optimizarea spațiului în locuințe mici",
-    description:
-      "Sfaturi practice pentru a maximiza funcționalitatea și confortul în apartamente și case compacte.",
-    date: "8 Mai 2025",
-    link: "/blog/optimizare-spatiu",
-  },
-  {
-    id: 3,
-    image:
-      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Sisteme BMS pentru case inteligente",
-    description:
-      "Descoperiți avantajele integrării tehnologiilor avansate pentru controlul locuinței.",
-    date: "3 Mai 2025",
-    link: "/blog/sisteme-bms",
-  },
-  {
-    id: 4,
-    image:
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Materiale inovatoare în construcții",
-    description:
-      "Explorați cele mai recente materiale care sporesc durabilitatea și estetica clădirilor.",
-    date: "28 Aprilie 2025",
-    link: "/blog/materiale-inovatoare",
-  },
-  {
-    id: 5,
-    image:
-      "https://images.unsplash.com/photo-14973662105479-4275897b37b7?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
-    title: "Eficiența energetică în proiecte rezidențiale",
-    description:
-      "Metode dovedite pentru a reduce consumul de energie și costurile în locuințele moderne.",
-    date: "20 Aprilie 2025",
-    link: "/blog/eficienta-energetica",
-  },
-];
-
 // Main BlogCarousel Component
 export default function BlogCarousel({ posts = samplePosts }) {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -141,7 +88,10 @@ export default function BlogCarousel({ posts = samplePosts }) {
     : true;
 
   return (
-    <section className="py-8 px-4 md:px-8 mt-30 mb-10">
+    <section
+      className="py-8 px-4 md:px-8 mt-30 mb-10"
+      style={{ backgroundColor: "#f7f8fa" }}
+    >
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl md:text-3xl font-bold text-amber-400">
@@ -175,14 +125,21 @@ export default function BlogCarousel({ posts = samplePosts }) {
           </div>
         </div>
 
-        <div
-          ref={carouselRef}
-          className="flex overflow-x-auto pb-6 scrollbar-hide scroll-smooth"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {posts.map((post) => (
-            <BlogCard key={post.id} post={post} />
-          ))}
+        <div className="relative">
+          <div
+            ref={carouselRef}
+            className="flex overflow-x-auto pb-6 scrollbar-hide scroll-smooth"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {posts.map((post) => (
+              <BlogCard key={post.id} post={post} />
+            ))}
+          </div>
+          {/* Gradient effect matching the background color */}
+          <div
+            className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#f7f8fa] to-transparent pointer-events-none"
+            style={{ zIndex: 10 }}
+          />
         </div>
       </div>
     </section>

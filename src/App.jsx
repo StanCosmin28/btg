@@ -136,19 +136,9 @@ function App() {
       {/* <div className="flex flex-col items-center justify-center bg-[#f5f5f5] min-h-screen text-[#242424]">
           <h1 className="text-3xl font-bold">Expertiza</h1>
           </div> */}
-      {/* <Section>
-        <SmartSolutions />
-      </Section> */}
-      {/* <Section>
-        <SmartSolutions />
-      </Section> */}
-      {/* <ParallaxContainer /> */}
-      {/* </Section> */}
-      {/* <ParallaxContainer /> */}
-      {/* <SolutionsSection /> */}
-      {/* <SmartSolutions /> */}
-      <FAQSection />
+
       <BlogCard />
+      <FAQSection />
       <CTAButtonSection />
       <Footer />
     </>
