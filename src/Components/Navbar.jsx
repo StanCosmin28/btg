@@ -39,8 +39,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const textColor = isHovered ? "text-black" : "text-white";
-  const bgColor = isHovered ? "bg-white" : "bg-transparent";
+  // const textColor = isHovered ? "text-black" : "text-white";
+  const textColor = "text-black";
+  // const bgColor = isHovered ? "bg-white" : "bg-transparent";
+  const bgColor = "bg-white";
   const navbarClasses = `fixed w-full z-20 top-0 start-0 transition-all duration-300 ${bgColor} ${
     isNavbarVisible ? "translate-y-0" : "-translate-y-full"
   }`;
@@ -99,49 +101,6 @@ const Navbar = () => {
           }`}
           id="navbar-sticky"
         >
-          {/* <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
-            <li>
-              <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:hover:bg-transparent md:p-0 transition-all duration-200 hover:scale-110 hover:underline`}
-                aria-current="page"
-              >
-                Despre noi
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:hover:bg-transparent md:p-0 transition-colors duration-300`}
-              >
-                Solutii
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:hover:bg-transparent md:p-0 transition-colors duration-300`}
-              >
-                Expertiza
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:hover:bg-transparent md:p-0 transition-colors duration-300`}
-              >
-                Portofoliu
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:hover:bg-transparent md:p-0 transition-colors duration-300`}
-              >
-                Blog
-              </a>
-            </li>
-          </ul> */}
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-bold rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
             <li className="relative group">
               <a

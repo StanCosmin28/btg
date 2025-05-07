@@ -4,7 +4,7 @@ import data from "../Model/data";
 const Expertiza = () => {
   return (
     <section
-      className="w-full min-h-[500px] md:min-h-[700px] sm:h-[500px] relative bg-fit bg-right flex items-center"
+      className="w-full min-h-[500px] md:min-h-[700px] sm:h-[500px] relative bg-fit bg-right flex items-center bg-[#f7f8fa]"
       style={{
         backgroundSize: "auto 100%",
         backgroundRepeat: "no-repeat",
