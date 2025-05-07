@@ -20,6 +20,7 @@ import Expertiza from "./Components/Expertiza";
 import FAQSection from "./Components/FAQSection";
 import BlogCard from "./Components/BlogCard";
 import CTAButtonSection from "./Components/CTASection";
+import ProjectsSection from "./Components/ProjectsSection";
 // import FinalTimeline from "./Components/FinalTimeline";
 // import VerticalTimeline from "./Components/VericalTimeline";
 
@@ -30,6 +31,7 @@ function App() {
       <Navbar />
       <HeaderSection />
       <AboutUs />
+      <ProjectsSection />
       {/* <div className="app"> */}
       <StackCollapseSections />
       <Section>
