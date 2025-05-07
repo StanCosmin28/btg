@@ -61,35 +61,43 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
         ref={addToPanelsRef}
         className="panel relative w-full h-screen flex justify-center items-center overflow-hidden"
       >
-        <div className="image-grid flex justify-center items-center gap-2 w-full h-full px-1">
+        <div className="image-grid flex justify-center items-center w-full h-full">
           {/* First Image */}
-          <div className="image-container relative flex-1 h-full">
-            <div className="absolute h-full w-full bg-black opacity-50"></div>
+          <div className="image-container relative flex-1 h-full contain-content group">
+            <div className="absolute h-full w-full bg-black opacity-40 z-1"></div>
             <img
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover group-hover:blur-[2px] group-hover:scale-130 transition-all duration-350"
               src={sliderImages[index * 2] || "https://via.placeholder.com/600"}
               alt={`Work ${index * 2 + 1}`}
             />
             <div className="text-overlay absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-              <h1 className="text-xl md:text-2xl font-normal text-white max-w-[450px]">
+              <h3 className="text-xl md:text-2xl font-normal text-white max-w-[450px] p-4 z-2">
                 {sliderDescription[index * 2] || "No Description"}
-              </h1>
+              </h3>
+              <p className="max-w-[450px] group-hover:block hidden z-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                itaque totam quam voluptates. Dolores?
+              </p>
             </div>
           </div>
           {/* Second Image */}
-          <div className="image-container relative flex-1 h-full">
-            <div className="absolute h-full w-full bg-black opacity-50"></div>
+          <div className="image-container relative flex-1 h-full contain-content group">
+            <div className="absolute h-full w-full bg-black opacity-40 z-1"></div>
             <img
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover group-hover:blur-[2px] group-hover:scale-130 transition-all duration-350"
               src={
                 sliderImages[index * 2 + 1] || "https://via.placeholder.com/600"
               }
               alt={`Work ${index * 2 + 2}`}
             />
             <div className="text-overlay absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-              <h3 className="text-xl md:text-2xl font-normal text-white">
+              <h3 className="text-xl md:text-2xl font-normal text-white max-w-[450px] p-4 z-2">
                 {sliderDescription[index * 2 + 1] || "No Description"}
               </h3>
+              <p className="max-w-[450px] group-hover:block hidden z-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                itaque totam quam voluptates. Dolores?
+              </p>
             </div>
           </div>
         </div>
