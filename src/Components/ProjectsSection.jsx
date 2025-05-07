@@ -4,7 +4,7 @@ import { useState } from "react";
 const projectData = {
   commercial: {
     title: "Proiectul Nexus Tower",
-    titleOption: "Comerciale",
+    titleOption: "Comercial",
     description:
       "Proiectele comerciale includ spații de retail moderne, complexe de birouri și dezvoltări mixte, concepute pentru funcționalitate maximă și estetică atractivă.",
     image:
@@ -13,7 +13,7 @@ const projectData = {
   },
   industrial: {
     title: "Industriale",
-    titleOption: "Industriale",
+    titleOption: "Industrial",
     description:
       "Proiectele industriale cuprind depozite, fabrici și centre logistice, construite pentru eficiență și scalabilitate.",
     image:
@@ -22,7 +22,7 @@ const projectData = {
   },
   educational: {
     title: "Educaționale",
-    titleOption: "Educaționale",
+    titleOption: "Educațional",
     description:
       "Proiectele educaționale includ școli, universități și centre de cercetare, concepute pentru a încuraja învățarea și inovația.",
     image:
@@ -31,7 +31,7 @@ const projectData = {
   },
   institutional: {
     title: "Instituționale",
-    titleOption: "Instituționale",
+    titleOption: "Instituțional",
     description:
       "Proiectele instituționale acoperă spitale, clădiri guvernamentale și centre culturale, prioritizând accesibilitatea și durabilitatea.",
     image:
@@ -51,22 +51,42 @@ export default function ProjectsSection() {
   const currentProject = projectData[selectedOption];
 
   return (
-    <section className="py-12 px-4 md:px-8 bg-[#f7f8fa]">
+    <section className="py-10 px-4 md:px-8 bg-[#f7f8fa]">
       <div className="max-w-6xl mx-auto">
         {/* Title and Vertical Line */}
-        <div className="text-left mb-8">
+        <div className="text-left mb-2">
           <h2 className="text-xl sm:text-2xl font-bold mb-2 text-amber-400">
             Proiecte
           </h2>
           <div className="h-8 w-1 bg-amber-400 md:h-12"></div>
         </div>
-
+        <div className="hidden lg:flex justify-center lg:gap-8">
+          <div className="flex flex-wrap justify-center gap-4 mb-10">
+            {["commercial", "industrial", "educational", "institutional"].map(
+              (option) => (
+                <button
+                  key={option}
+                  onClick={() => handleOptionClick(option)}
+                  className={`py-2 px-4 rounded-lg text-sm font-medium transition-colors ${
+                    selectedOption === option
+                      ? "bg-amber-100 text-amber-600"
+                      : "bg-white text-gray-800 hover:bg-gray-100"
+                  }`}
+                >
+                  {projectData[option].titleOption}
+                </button>
+              )
+            )}
+          </div>
+        </div>
         {/* Desktop Layout: Flex with options, title, description, button on left; image on right */}
         <div className="hidden lg:flex lg:gap-8">
           {/* Left: Options, Title, Description, Button */}
           <div className="w-1/2 space-y-6">
+            {" "}
+            {/* flex flex-col justify-between */}
             {/* Options */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               {["commercial", "industrial", "educational", "institutional"].map(
                 (option) => (
                   <button
@@ -82,7 +102,7 @@ export default function ProjectsSection() {
                   </button>
                 )
               )}
-            </div>
+            </div> */}
             {/* Title */}
             <h3 className="text-3xl font-bold text-gray-900 text-left">
               {currentProject.title}
@@ -128,16 +148,16 @@ export default function ProjectsSection() {
         {/* Tablet and Mobile Layout */}
         <div className="lg:hidden space-y-6">
           {/* Options */}
-          <div className="flex flex-wrap justify-start gap-2">
+          <div className="flex flex-wrap justify-center gap-1 ">
             {["commercial", "industrial", "educational", "institutional"].map(
               (option) => (
                 <button
                   key={option}
                   onClick={() => handleOptionClick(option)}
-                  className={`py-2 px-4 rounded-lg text-sm font-medium transition-colors ${
+                  className={`py-2 px-1 rounded-lg text-sm font-medium transition-colors ${
                     selectedOption === option
-                      ? "bg-amber-100 text-amber-600"
-                      : "bg-white text-gray-800 hover:bg-gray-100"
+                      ? " text-amber-600"
+                      : " text-gray-800 hover:bg-gray-100"
                   }`}
                 >
                   {projectData[option].titleOption}
@@ -152,17 +172,17 @@ export default function ProjectsSection() {
           </h3>
 
           {/* Image with Overlay Text */}
-          <div className="relative flex right-0 items-right justify-center">
+          <div className="relative flex right-0 items-center justify-center flex-col">
             <img
               src={currentProject.image}
               alt={currentProject.title}
-              className="w-full max-w-[300px] h-[300px] object-cover rounded-lg"
+              className="w-full  h-[300px] object-cover rounded-lg"
             />
-            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-80 p-4 rounded-lg w-3/4 max-w-[300px]">
-              <p className="text-gray-700 text-sm">
-                {currentProject.description}
-              </p>
-            </div>
+            {/* <div className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-80 p-4 rounded-lg w-3/4 max-w-[300px]"> */}
+            <p className="text-gray-700 text-sm max-w-[400px] mt-5">
+              {currentProject.description}
+            </p>
+            {/* </div> */}
           </div>
 
           {/* Button */}
