@@ -64,19 +64,21 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
         <div className="image-grid flex justify-center items-center gap-2 w-full h-full px-1">
           {/* First Image */}
           <div className="image-container relative flex-1 h-full">
+            <div className="absolute h-full w-full bg-black opacity-50"></div>
             <img
               className="w-full h-full object-cover"
               src={sliderImages[index * 2] || "https://via.placeholder.com/600"}
               alt={`Work ${index * 2 + 1}`}
             />
             <div className="text-overlay absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-              <h1 className="text-xl md:text-2xl font-bold text-white">
+              <h1 className="text-xl md:text-2xl font-normal text-white max-w-[450px]">
                 {sliderDescription[index * 2] || "No Description"}
               </h1>
             </div>
           </div>
           {/* Second Image */}
-          <div className="image-container relative flex-1 h-full ">
+          <div className="image-container relative flex-1 h-full">
+            <div className="absolute h-full w-full bg-black opacity-50"></div>
             <img
               className="w-full h-full object-cover"
               src={
@@ -85,7 +87,7 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
               alt={`Work ${index * 2 + 2}`}
             />
             <div className="text-overlay absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-              <h3 className="text-xl md:text-2xl font-bold text-white">
+              <h3 className="text-xl md:text-2xl font-normal text-white">
                 {sliderDescription[index * 2 + 1] || "No Description"}
               </h3>
             </div>
