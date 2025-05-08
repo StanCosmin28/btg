@@ -18,19 +18,31 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
     if (panelsRef.current.length === 0 || !containerRef.current) return;
 
     const totalPanels = panelsRef.current.length;
-    const totalWidth = 50 * totalPanels;
-    //if mobile => 75 || if tablet or above 50
 
-    // Force recalculate width on resize
+    // Dynamically calculate totalWidth based on screen size
+    const calculateTotalWidth = () => {
+      const isMobile = window.innerWidth < 768; // Mobile breakpoint
+      const panelWidthPercentage = isMobile ? 75 : 50; // 75% for mobile, 50% for desktop
+      return panelWidthPercentage * totalPanels;
+    };
+
+    // Set container width based on total panels and viewport
     const handleResize = () => {
+      const totalWidth = calculateTotalWidth();
       gsap.set(containerRef.current, {
         width: `${totalPanels * window.innerWidth}px`,
       });
+
+      // Update ScrollTrigger end position
+      if (scrollTweenRef.current?.scrollTrigger) {
+        scrollTweenRef.current.scrollTrigger.refresh();
+      }
     };
 
     window.addEventListener("resize", handleResize);
     handleResize(); // Initial calculation
 
+    const totalWidth = calculateTotalWidth();
     scrollTweenRef.current = gsap.to(panelsRef.current, {
       xPercent: -totalWidth,
       ease: "power3.inOut",

@@ -32,9 +32,9 @@ function App() {
       <HeaderSection />
       <AboutUs />
       <StackCollapseSections />
-      <Section>
-        <SmartSolutions />
-      </Section>
+      {/* <Section> */}
+      <SmartSolutions />
+      {/* </Section> */}
 
       <HorizontalScrollSectionDemo />
       <WhatWeOfferSection />

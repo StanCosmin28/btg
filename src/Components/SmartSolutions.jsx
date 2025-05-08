@@ -10,6 +10,7 @@ export default function SmartSolutions() {
   const headerRef = useRef(null);
   const iconsRef = useRef(null);
   const rightRef = useRef(null);
+  const sectionRef = useRef(null); // Ref for the section to measure height
   const isHeaderInView = useInView(headerRef, {
     once: true,
     margin: "0px",
@@ -65,7 +66,7 @@ export default function SmartSolutions() {
   };
 
   const rightVariants = {
-    hidden: { y: 50, opacity: 0 }, // Bottom-up animation
+    hidden: { y: 50, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
@@ -74,7 +75,10 @@ export default function SmartSolutions() {
   };
 
   return (
-    <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row px-10 bg-white pb-20">
+    <section
+      ref={sectionRef}
+      className="section flex w-full min-h-screen justify-center items-center flex-col md:flex-row px-8 bg-white"
+    >
       {/* Left Section: Text and Icons */}
       <div className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-4 sm:p-6">
         <div
@@ -96,7 +100,7 @@ export default function SmartSolutions() {
           </motion.div>
 
           {/* Main Content */}
-          <div className="w-full sm:w-[90%] md:w-[80%] space-y-4 md:space-y-6 text-black">
+          <div className="w-full sm:w-[90%] md:w-[80%] sm:space-y-4 md:space-y-6 text-black">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
               Proiectăm sisteme BMS direct pe planul tău.
             </h2>
@@ -123,7 +127,7 @@ export default function SmartSolutions() {
                 transition: { staggerChildren: 0.2 },
               },
             }}
-            className="mt-10 flex flex-row flex-wrap md:gap-12 xl:gap-25 text-center text-black sm:gap-10 w-full md:max-w-[600px] justify-center"
+            className="md:mt-10 flex flex-row flex-wrap md:gap-12 xl:gap-25 text-center text-black sm:gap-10 w-full md:max-w-[600px] justify-center"
           >
             <motion.div
               variants={iconVariants}
@@ -169,6 +173,6 @@ export default function SmartSolutions() {
           />
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 }
