@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Colony Wars";
-  src: url("/Colony_Wars.ttf") format("truetype");
+  src: url("https://stancosmin28.github.io/btg/Colony_Wars.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }

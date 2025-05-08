@@ -89,7 +89,7 @@ export default function BlogCarousel({ posts = samplePosts }) {
 
   return (
     <section
-      className="py-8 px-4 md:px-8 lg:mt-30 mb-10"
+      className="py-8 px-4 md:px-8 lg:mt-30 md:mb-10"
       // style={{ backgroundColor: "#f7f8fa" }}
     >
       <div className="max-w-6xl mx-auto">

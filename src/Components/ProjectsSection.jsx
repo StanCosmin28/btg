@@ -52,10 +52,10 @@ export default function ProjectsSection() {
 
   return (
     <section className="py-10 px-4 md:px-8 bg-[#f7f8fa]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         {/* Title and Vertical Line */}
         <div className="text-left mb-2">
-          <h2 className="text-xl sm:text-2xl font-bold mb-2 text-amber-400">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-amber-400">
             Proiecte
           </h2>
           <div className="h-8 w-1 bg-amber-400 md:h-12"></div>
@@ -109,11 +109,11 @@ export default function ProjectsSection() {
             </div>
             {/* Title */}
             <div className="lg:ml-5 xl:ml-20 mt-10 flex flex-col gap-5 max-w-lg">
-              <h3 className="text-3xl font-bold text-gray-900 text-left">
+              <h3 className="lg:text-4xl xl:text-5xl font-bold text-gray-900 text-left">
                 {currentProject.title}
               </h3>
               {/* Description */}
-              <p className="text-gray-700 text-left">
+              <p className="text-gray-700 text-left lg:text-xl">
                 {currentProject.description}
               </p>
               {/* Button */}
@@ -152,9 +152,9 @@ export default function ProjectsSection() {
         </div>
 
         {/* Tablet and Mobile Layout */}
-        <div className="lg:hidden space-y-6">
+        <div className="lg:hidden ">
           {/* Options */}
-          <div className="flex flex-wrap justify-center gap-1 ">
+          <div className="flex flex-wrap justify-center gap-1 mb-2">
             {["commercial", "industrial", "educational", "institutional"].map(
               (option) => (
                 <button
@@ -173,7 +173,7 @@ export default function ProjectsSection() {
           </div>
 
           {/* Selected Option Title */}
-          <h3 className="text-3xl font-bold text-gray-900 text-center">
+          <h3 className="text-3xl font-bold text-gray-900 text-center mb-2">
             {currentProject.title}
           </h3>
 
@@ -185,14 +185,14 @@ export default function ProjectsSection() {
               className="w-full  h-[300px] object-cover rounded-lg"
             />
             {/* <div className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-80 p-4 rounded-lg w-3/4 max-w-[300px]"> */}
-            <p className="text-gray-700 text-md w-full mt-2">
+            <p className="text-gray-700 text-md w-full my-2">
               {currentProject.description}
             </p>
             {/* </div> */}
           </div>
 
           {/* Button */}
-          <div className="text-center">
+          <div className="text-center mt-4">
             <a
               href={currentProject.link}
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#0655D1] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 hover:font-bold transition-all duration-300 hover:scale-105"

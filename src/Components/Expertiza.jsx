@@ -20,17 +20,17 @@ const Expertiza = () => {
           {/* Header */}
           <div className="flex flex-col">
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-amber-400">
-              EXPERTIZA
+              Expertiză
             </h3>
             <div className="h-8 w-1 bg-amber-400 md:h-12"></div>
           </div>
 
           {/* Main Content */}
-          <div className="space-y-4 text-black flex flex-col ">
-            <h2 className="text-6xl font-semibold max-[576px]:text-[40px] md:text-5xl sm:text-3xl max-w-sm md:max-w-xl lg:text-5xl lg:max-w-[850px]">
+          <div className="text-black flex flex-col ">
+            <h2 className="text-6xl font-semibold max-[576px]:text-[35px] md:text-5xl sm:text-3xl max-w-sm md:max-w-xl lg:text-5xl lg:max-w-[850px]">
               Soluții personalizate pentru orice tip de clădire
             </h2>
-            <p className="text-xl mt-6 max-w-lg max-[376px]:text-sm lg:text-2xl lg:max-w-[850px] ">
+            <p className="text-xl mt-6 max-w-lg max-[376px]:text-sm lg:text-2xl lg:max-w-[550px] ">
               Adaptăm soluții pentru diverse tipuri de clădiri, asigurând
               siguranță sporită, economii de energie și costuri operaționale
               reduse, cu sisteme fiabile și ușor de integrat.
