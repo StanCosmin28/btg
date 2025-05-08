@@ -8,27 +8,27 @@ export default function FAQSection() {
     {
       question: "Ce înseamnă proiectare BMS?",
       answer:
-        "We offer a comprehensive range of services including web design, app development, digital marketing, and brand strategy. Our team specializes in creating custom solutions tailored to your specific business needs and goals.",
+        "Proiectarea BMS integrează sistemele clădirii într-un plan unitar pentru eficiență și gestionare ușoară.",
     },
     {
       question: "De ce să integrez BMS-ul din faza de proiectare?",
       answer:
-        "Our pricing varies based on project scope, complexity, and timeline. We offer flexible pricing models including hourly rates, fixed project fees, and retainer packages. Contact us for a personalized quote based on your specific requirements.",
+        "O proiectare corelată previne conflictele între instalații, economisește timp și bani, și asigură un proiect clar, gata de implementat.",
     },
     {
       question: "Cu se softuri lucrați?",
       answer:
-        "Project timelines depend on scope and complexity. Simple websites typically take 2-4 weeks, while complex web applications may require 2-6 months. During our initial consultation, we'll provide a detailed timeline based on your specific project requirements and priorities.",
+        "Costurile variază în funcție de proiect, dar economiile pe termen lung din energie și eficiență le compensează. Oferim consultații gratuite pentru estimări.",
     },
     {
       question: "Care sunt costurile asociate cu proiectarea inteligentă",
       answer:
-        "Yes, we provide ongoing support and maintenance packages for all our projects. These include regular updates, security patches, performance optimization, and technical support. We're committed to ensuring the long-term success of your digital products.",
+        "Da, putem integra sisteme smart într-o clădire existentă, adaptându-le la infrastructura actuală.",
     },
     {
       question: "Pot integra sisteme smart într-o clădire existentă?",
       answer:
-        "We include two rounds of revisions in our standard project scope. Additional revision requests beyond the agreed scope may incur extra charges. We believe in transparent communication throughout the project to minimize the need for extensive revisions.",
+        "Folosim AutoCAD, Revit și alte instrumente, adaptate cerințelor proiectului și echipei de arhitectură.",
     },
   ];
 
