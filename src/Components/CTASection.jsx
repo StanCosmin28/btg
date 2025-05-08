@@ -22,7 +22,7 @@ export default function CTASection() {
           Suntem aici să răspundem întrebărilor tale și să te <br /> ajutăm
           să-ți transformi viziunea în realitate.
         </h3>
-        <button className="mt-2 sm:mt-4 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-2xl bg-white text-black font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-lg hover:bg-gray-200 transition-all hover:scale-105 cursor-pointer text-xs sm:text-sm md:text-base lg:text-lg">
+        <button className="mt-2 sm:mt-4 w-full max-w-xs sm:max-w-sm  bg-white text-black font-semibold py-2 sm:py-3 px-4 sm:px-6 rounded-lg hover:bg-gray-200 transition-all hover:scale-105 cursor-pointer text-xs sm:text-sm md:text-base lg:text-lg">
           SOLICITĂ O CONSULTAȚIE
         </button>
       </div>

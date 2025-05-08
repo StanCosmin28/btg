@@ -59,7 +59,7 @@ export default function FAQSection() {
               className={`bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg`}
             >
               <div
-                className={`p-5 cursor-pointer flex justify-between items-left font-medium text-gray-700 hover:bg-blue-100 transition-colors ${
+                className={`p-5 cursor-pointer flex justify-between items-left font-medium text-gray-700 hover:bg-blue-100 transition-colors text-left ${
                   activeIndex === index ? "bg-blue-200" : ""
                 }`}
                 onClick={(e) => {
@@ -106,7 +106,7 @@ export default function FAQSection() {
           ))}
         </ul>
       </div>
-      <button className="transition-all duration-300 hover:scale-102 max-w-5xl w-full p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white rounded-lg cursor-pointer bg-[#0655D1]">
+      <button className="transition-all duration-300 hover:scale-102 max-w-4xl w-full p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white rounded-lg cursor-pointer bg-[#0655D1]">
         Contactează-ne
       </button>
     </div>

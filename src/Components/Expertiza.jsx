@@ -15,7 +15,7 @@ const Expertiza = () => {
       {/* <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.25)] to-[rgba(0,0,0,0.25)]"></div> */}
 
       {/* Content */}
-      <div className="w-full md:w-2/3 h-full flex flex-col justify-center items-left p-4 sm:p-6 md:p-8 lg:ml-10 z-[10] text-left">
+      <div className="w-full md:w-2/3 h-full flex flex-col justify-center items-left p-4 sm:p-6 md:p-8  z-[10] text-left">
         <div className="flex flex-col space-y-6">
           {/* Header */}
           <div className="flex flex-col">
@@ -27,7 +27,7 @@ const Expertiza = () => {
 
           {/* Main Content */}
           <div className="space-y-4 text-black flex flex-col ">
-            <h2 className="text-6xl font-semibold max-[576px]:text-[40px] md:text-5xl sm:text-3xl max-w-sm md:max-w-xl lg:text-7xl lg:max-w-[850px]">
+            <h2 className="text-6xl font-semibold max-[576px]:text-[40px] md:text-5xl sm:text-3xl max-w-sm md:max-w-xl lg:text-5xl lg:max-w-[850px]">
               Soluții personalizate pentru orice tip de clădire
             </h2>
             <p className="text-xl mt-6 max-w-lg max-[376px]:text-sm lg:text-2xl lg:max-w-[850px] ">

@@ -5,20 +5,27 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <div className="flex flex-col text-left gap-4">
-              <a href="/" className="flex items-center group">
-                <img
-                  src="public/btg-logo.svg"
-                  className="h-8 me-3 transition-transform group-hover:rotate-12"
-                  alt="Logo"
-                />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap text-white group-hover:text-blue-400 transition-colors">
-                  BTG
-                </span>
-              </a>
-              <p>
-                Lorem ipsum dolor sit, amet <br /> consectetur adipisicing elit.
-                A
-              </p>
+              <div className="flex flex-row gap-4 justify-evenly">
+                <a href="/" className="flex items-center group">
+                  <img
+                    src="public/btg-logo.svg"
+                    className="h-8 me-3 transition-transform group-hover:rotate-12"
+                    alt="Logo"
+                  />
+                  <span className="self-center text-2xl font-semibold whitespace-nowrap text-white group-hover:text-blue-400 transition-colors">
+                    BTG
+                  </span>
+                </a>
+                <p>
+                  Lorem ipsum dolor sit, amet <br /> consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              <div>
+                <button className="transition-all duration-300 hover:scale-102 max-w-4xl w-full p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white  cursor-pointer bg-[#0655D1]">
+                  Contactează-ne
+                </button>
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-10 sm:grid-cols-3 text-left">

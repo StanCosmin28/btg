@@ -4,7 +4,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(false); // Initially hidden
   const [isHovered, setIsHovered] = useState(false);
   const lastScrollPosition = useRef(0);
   const navbarRef = useRef(null);
@@ -16,20 +16,24 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.pageYOffset;
+      const videoHeight = window.innerHeight; // Adjust based on your video section height
 
-      if (currentScrollPosition <= 0) {
-        // At top of page
-        setIsNavbarVisible(true);
+      // If at the top or within video section, hide navbar
+      if (currentScrollPosition <= videoHeight) {
+        setIsNavbarVisible(false);
         lastScrollPosition.current = currentScrollPosition;
         return;
       }
 
-      if (currentScrollPosition > lastScrollPosition.current) {
-        // Scrolling down
-        setIsNavbarVisible(false);
-      } else {
-        // Scrolling up
-        setIsNavbarVisible(true);
+      // After video section
+      if (currentScrollPosition > videoHeight) {
+        if (currentScrollPosition < lastScrollPosition.current) {
+          // Scrolling up
+          setIsNavbarVisible(true);
+        } else {
+          // Scrolling down
+          setIsNavbarVisible(false);
+        }
       }
 
       lastScrollPosition.current = currentScrollPosition;
@@ -39,12 +43,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const textColor = isHovered ? "text-black" : "text-white";
   const textColor = "text-black";
-  // const bgColor = isHovered ? "bg-white" : "bg-transparent";
   const bgColor = "bg-white";
   const navbarClasses = `fixed w-full z-20 top-0 start-0 transition-all duration-300 ${bgColor} ${
-    isNavbarVisible ? "translate-y-0" : "-translate-y-full"
+    isNavbarVisible ? "translate-y-0 bg-white" : "-translate-y-full"
   }`;
 
   return (

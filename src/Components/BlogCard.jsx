@@ -89,7 +89,7 @@ export default function BlogCarousel({ posts = samplePosts }) {
 
   return (
     <section
-      className="py-8 px-4 md:px-8 mt-30 mb-10 bg-blue-800"
+      className="py-8 px-4 md:px-8 lg:mt-30 mb-10"
       // style={{ backgroundColor: "#f7f8fa" }}
     >
       <div className="max-w-6xl mx-auto">
@@ -137,7 +137,7 @@ export default function BlogCarousel({ posts = samplePosts }) {
           </div>
           {/* Gradient effect matching the background color */}
           <div
-            className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-blue-800 to-transparent pointer-events-none"
+            className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#f7f8fa] to-transparent pointer-events-none"
             style={{ zIndex: 10 }}
           />
         </div>
