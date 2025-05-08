@@ -1,3 +1,4 @@
+import data from "../Model/data";
 export default function Footer() {
   return (
     <footer className="bg-[#000E18]">
@@ -8,7 +9,7 @@ export default function Footer() {
               <div className="flex flex-row md:flex-col gap-4 justify-evenly">
                 <a href="/" className="flex items-center group">
                   <img
-                    src="public/btg-logo.svg"
+                    src={data.logo}
                     className="h-8 me-3 transition-transform group-hover:rotate-12"
                     alt="Logo"
                   />
