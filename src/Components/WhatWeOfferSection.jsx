@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Check, Lightbulb, Target, Users } from "lucide-react";
+import "./whatWeOffer.css";
 
 export default function WhatWeOfferSection() {
   const cards = [
@@ -45,7 +46,7 @@ export default function WhatWeOfferSection() {
           </p> */}
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 custom-cursor">
           {cards.map((card, index) => (
             <motion.div
               key={index}
@@ -53,7 +54,7 @@ export default function WhatWeOfferSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5 }}
-              className="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+              className="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition-all hover:scale-105 duration-350"
             >
               <div
                 className={`w-14 h-14 rounded-full flex items-center justify-center ${card.color} mb-4`}
