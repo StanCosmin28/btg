@@ -15,7 +15,7 @@ export default function HeaderSection({
   borderWidth = 1,
   backgroundColor = "#060606",
   textSize = "text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[7rem]",
-  fontFamily = "",
+  fontFamily = data.font,
   showProgress = true,
   className = "",
   style = {},
