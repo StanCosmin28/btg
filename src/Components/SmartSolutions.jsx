@@ -155,7 +155,7 @@ export default function SmartSolutions() {
       </div>
 
       {/* Right Section: Image */}
-      <motion.div
+      <div
         ref={rightRef}
         initial="hidden"
         animate={rightControls}
@@ -164,15 +164,15 @@ export default function SmartSolutions() {
       >
         <div
           id="right"
-          className="flex justify-center items-start md:items-center w-full max-w-[500px] sm:max-w-[350px] md:max-w-[600px]"
+          className="flex justify-center items-start md:items-center w-[90%] max-w-[500px] sm:max-w-[350px] md:max-w-[600px]"
         >
           <img
             className="w-full h-auto"
             src={data.services}
-            alt="House plan illustration"
+            alt="Smart Solutions Diagram"
           />
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }
