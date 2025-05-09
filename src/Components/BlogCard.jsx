@@ -90,6 +90,7 @@ export default function BlogCarousel({ posts = samplePosts }) {
 
   return (
     <section
+      id="blog"
       className="py-8 px-4 md:px-8 lg:mt-30 md:mb-10 small-blog"
       // style={{ backgroundColor: "#f7f8fa" }}
     >

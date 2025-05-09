@@ -6,9 +6,9 @@ export default function WhatWeOfferSection() {
   const cards = [
     {
       icon: <Users className="w-8 h-8 text-white" />,
-      title: "Expert Collaboration",
+      title: "Lipsa coordonării între specialități",
       description:
-        "Work with seasoned professionals focused on communication and partnership.",
+        "Asigurăm coerență între instalații. Fără conflicte pe șantier.",
       color: "bg-teal-500",
     },
     {

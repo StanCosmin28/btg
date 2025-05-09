@@ -77,6 +77,7 @@ export default function SmartSolutions() {
 
   return (
     <section
+      id="solutions"
       ref={sectionRef}
       className="section flex w-full min-h-screen justify-center items-center flex-col md:flex-row px-8 bg-white small-solutions"
     >

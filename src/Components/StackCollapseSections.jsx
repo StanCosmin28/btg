@@ -51,8 +51,8 @@ const StackCollapseSections = () => {
       }
 
       // Initialize sections
-      // gsap.set(validSections, { y: 0 });
-      // gsap.set(validContents, { scale: 1 });
+      gsap.set(validSections, { y: 0 });
+      gsap.set(validContents, { scale: 1 });
 
       // Pin, snap, and animate background size for each section
       validSections.forEach((section, index) => {

@@ -2,4 +2,7 @@
   .small-footer-logo {
     flex-direction: column;
   }
+  .small-footer {
+    flex-direction: column;
+  }
 }

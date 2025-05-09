@@ -49,7 +49,7 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
       scrollTrigger: {
         trigger: containerRef.current,
         pin: true,
-        scrub: 0.5,
+        scrub: 3,
         start: "top top",
         end: () => `+=${containerRef.current.offsetWidth}`,
         anticipatePin: 1,

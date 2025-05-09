@@ -13,6 +13,18 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleScrollToSection = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop, // Adjust for fixed header (e.g., 80px)
+        behavior: "smooth",
+      });
+      setIsMenuOpen(!isMenuOpen);
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.pageYOffset;
@@ -106,9 +118,10 @@ const Navbar = () => {
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-bold rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
             <li className="relative group">
               <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 `}
+                // href="about"
+                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 cursor-pointer`}
                 aria-current="page"
+                onClick={(e) => handleScrollToSection(e, "about")}
               >
                 Despre noi
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -116,8 +129,9 @@ const Navbar = () => {
             </li>
             <li className="relative group">
               <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 `}
+                // href="solutions"
+                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 cursor-pointer`}
+                onClick={(e) => handleScrollToSection(e, "solutions")}
               >
                 Solutii
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -125,8 +139,9 @@ const Navbar = () => {
             </li>
             <li className="relative group">
               <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 `}
+                // href="#"
+                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 cursor-pointer`}
+                onClick={(e) => handleScrollToSection(e, "expertiza")}
               >
                 Expertiza
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -134,8 +149,9 @@ const Navbar = () => {
             </li>
             <li className="relative group">
               <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 `}
+                // href="#"
+                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 cursor-pointer`}
+                onClick={(e) => handleScrollToSection(e, "proiecte")}
               >
                 Portofoliu
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -143,8 +159,9 @@ const Navbar = () => {
             </li>
             <li className="relative group">
               <a
-                href="#"
-                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 `}
+                // href="#"
+                className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 cursor-pointer`}
+                onClick={(e) => handleScrollToSection(e, "blog")}
               >
                 Blog
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>

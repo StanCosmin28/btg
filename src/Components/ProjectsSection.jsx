@@ -52,7 +52,7 @@ export default function ProjectsSection() {
   const currentProject = projectData[selectedOption];
 
   return (
-    <section className="py-10 px-4 md:px-8 bg-[#f7f8fa]">
+    <section id="proiecte" className="py-10 px-4 md:px-8 bg-[#f7f8fa]">
       <div className="max-w-8xl mx-auto">
         {/* Title and Vertical Line */}
         <div className="text-left mb-2">

@@ -82,7 +82,10 @@ export default function AboutUs() {
   };
 
   return (
-    <div className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row p-5 small-about">
+    <div
+      id="about"
+      className="flex w-full min-h-screen justify-center items-center flex-col md:flex-row p-5 small-about"
+    >
       {/* Left Section: Text and Counters */}
       <motion.div
         ref={leftRef}
