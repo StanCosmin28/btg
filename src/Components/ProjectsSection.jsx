@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./projects.css";
 
 // Sample project data
 const projectData = {
@@ -154,7 +155,7 @@ export default function ProjectsSection() {
         {/* Tablet and Mobile Layout */}
         <div className="lg:hidden ">
           {/* Options */}
-          <div className="flex flex-wrap justify-center gap-1 mb-2">
+          <div className="flex flex-wrap justify-center gap-1 mb-2 small-projects">
             {["commercial", "industrial", "educational", "institutional"].map(
               (option) => (
                 <button
@@ -185,7 +186,7 @@ export default function ProjectsSection() {
               className="w-full  h-[300px] object-cover rounded-lg"
             />
             {/* <div className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-80 p-4 rounded-lg w-3/4 max-w-[300px]"> */}
-            <p className="text-gray-700 text-md w-full my-2">
+            <p className="text-gray-700 text-md w-full my-2 small-projects-description">
               {currentProject.description}
             </p>
             {/* </div> */}

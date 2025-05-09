@@ -9,3 +9,15 @@
 .special-font {
   font-family: "Colony Wars", sans-serif;
 }
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 25px;
+  }
+  .small-header {
+    padding: 0 4px 0 4px;
+  }
+  .small-about {
+    padding: 0;
+  }
+}

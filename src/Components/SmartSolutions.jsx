@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import data from "../Model/data";
+import "./smartSolutions.css";
 
 export default function SmartSolutions() {
   // Animation controls
@@ -77,7 +78,7 @@ export default function SmartSolutions() {
   return (
     <section
       ref={sectionRef}
-      className="section flex w-full min-h-screen justify-center items-center flex-col md:flex-row px-8 bg-white"
+      className="section flex w-full min-h-screen justify-center items-center flex-col md:flex-row px-8 bg-white small-solutions"
     >
       {/* Left Section: Text and Icons */}
       <div className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-4 sm:p-6">
@@ -127,7 +128,7 @@ export default function SmartSolutions() {
                 transition: { staggerChildren: 0.2 },
               },
             }}
-            className="md:mt-10 flex flex-row flex-wrap md:gap-12 xl:gap-25 text-center text-black sm:gap-10 w-full md:max-w-[600px] justify-center"
+            className="md:mt-10 flex flex-row md:gap-12 xl:gap-25 text-center text-black sm:gap-10 w-full md:max-w-[600px] justify-center small-solutions-icons"
           >
             <motion.div
               variants={iconVariants}
@@ -155,12 +156,13 @@ export default function SmartSolutions() {
       </div>
 
       {/* Right Section: Image */}
+      {/* <div className="small-solutions-img-container"> */}
       <div
         ref={rightRef}
         initial="hidden"
         animate={rightControls}
         variants={rightVariants}
-        className="flex w-full md:w-1/2 justify-center items-center"
+        className="flex w-full md:w-1/2 justify-center items-center small-solutions-img small-solutions-img-container"
       >
         <div
           id="right"
@@ -173,6 +175,7 @@ export default function SmartSolutions() {
           />
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 }

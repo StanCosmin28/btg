@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import samplePosts from "../Model/blogData";
+import "./blogCard.css";
 
 // BlogCard Component
 const BlogCard = ({ post }) => {
@@ -11,7 +12,7 @@ const BlogCard = ({ post }) => {
       <a href={link}>
         <img
           className="rounded-t-lg w-full h-48 object-cover"
-          src={image || "/api/placeholder/400/320"}
+          src={image}
           alt={title}
         />
       </a>
@@ -89,7 +90,7 @@ export default function BlogCarousel({ posts = samplePosts }) {
 
   return (
     <section
-      className="py-8 px-4 md:px-8 lg:mt-30 md:mb-10"
+      className="py-8 px-4 md:px-8 lg:mt-30 md:mb-10 small-blog"
       // style={{ backgroundColor: "#f7f8fa" }}
     >
       <div className="max-w-6xl mx-auto">

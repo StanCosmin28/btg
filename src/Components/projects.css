@@ -1,0 +1,20 @@
+@media only screen and (max-width: 360px) {
+  .small-projects {
+    flex-wrap: nowrap;
+  }
+  .small-projects button {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 475px) and (max-width: 1024px) {
+  .small-projects button {
+    font-size: 20px;
+  }
+  .small-projects {
+    gap: 10px;
+  }
+  .small-projects-description {
+    max-width: 85vw;
+  }
+}

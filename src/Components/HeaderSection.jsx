@@ -86,7 +86,7 @@ export default function HeaderSection({
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="relative text-left max-w-full px-4 uppercase ml-5 md:ml-10">
+        <div className="relative text-left max-w-full px-4 uppercase ml-5 md:ml-10 small-header">
           <div className="relative z-10">
             {/* Outline text (bottom layer) */}
             <h1

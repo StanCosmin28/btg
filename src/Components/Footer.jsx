@@ -1,4 +1,5 @@
 import data from "../Model/data";
+import "./footer.css";
 export default function Footer() {
   return (
     <footer className="bg-[#000E18]">
@@ -6,7 +7,7 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <div className="flex flex-col text-left gap-4">
-              <div className="flex flex-row md:flex-col gap-4 justify-evenly">
+              <div className="flex flex-row md:flex-col gap-4 justify-evenly small-footer-logo">
                 <a href="/" className="flex items-center group">
                   <img
                     src={data.logo}

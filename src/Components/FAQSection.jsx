@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./faqSection.css";
 
 export default function FAQSection() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -44,7 +45,7 @@ export default function FAQSection() {
 
   return (
     <div
-      className=" flex justify-center items-center p-8 flex-col gap-10  md:my-30"
+      className=" flex justify-center items-center p-8 flex-col gap-10  md:my-30 small-faq"
       onClick={handleOutsideClick}
     >
       <div className="w-11/12 max-w-5xl mx-auto">
@@ -106,6 +107,7 @@ export default function FAQSection() {
           ))}
         </ul>
       </div>
+
       <button className="transition-all duration-300 hover:scale-102 max-w-4xl w-full p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white rounded-lg cursor-pointer bg-[#0655D1]">
         Contactează-ne
       </button>
