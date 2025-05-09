@@ -2,7 +2,7 @@ import BlurText from "./BlurText";
 
 export default function HeroHeaderText() {
   const handleAnimationComplete = () => {
-    console.log("Animation completed!");
+    // console.log("Animation completed!");
   };
 
   const text = ` Proiectăm Viitorul '/n' Inteligent al Clădirilor`;

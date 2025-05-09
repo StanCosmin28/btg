@@ -51,8 +51,8 @@ const StackCollapseSections = () => {
       }
 
       // Initialize sections
-      gsap.set(validSections, { y: 0 });
-      gsap.set(validContents, { scale: 1 });
+      // gsap.set(validSections, { y: 0 });
+      // gsap.set(validContents, { scale: 1 });
 
       // Pin, snap, and animate background size for each section
       validSections.forEach((section, index) => {
@@ -111,14 +111,14 @@ const StackCollapseSections = () => {
       });
 
       // Log successful initialization
-      console.log("Sections initialized:", validSections.length);
+      // console.log("Sections initialized:", validSections.length);
     };
 
     // Delay initialization to ensure refs and images are loaded
     const timer = setTimeout(() => {
       initializeAnimations();
       ScrollTrigger.refresh();
-      console.log("ScrollTrigger refreshed");
+      // console.log("ScrollTrigger refreshed");
     }, 200);
 
     // Refresh on window resize for responsiveness
@@ -132,7 +132,7 @@ const StackCollapseSections = () => {
       sectionsRef.current = [];
       contentRefs.current = [];
       ScrollTrigger.clearScrollMemory();
-      console.log("Cleaned up ScrollTrigger and refs");
+      // console.log("Cleaned up ScrollTrigger and refs");
     };
   }, []);
 
