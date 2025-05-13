@@ -1,3 +1,4 @@
+import data from "../Model/data";
 export default function HeaderContacts() {
   return (
     <div className="flex flex-wrap justify-center gap-4 sm:gap-2 md:gap-16 lg:gap-40 flex-row">
@@ -20,7 +21,7 @@ export default function HeaderContacts() {
         </svg> */}
         <img
           className="h-10 w-10 transition-colors group-hover:text-blue-200"
-          src="public/mail.svg"
+          src={data.headerMail}
           alt=""
         />
         <p
@@ -47,7 +48,7 @@ export default function HeaderContacts() {
         </svg> */}
         <img
           className="h-10 w-10 transition-colors group-hover:text-blue-200"
-          src="public/location.svg"
+          src={data.headerLocation}
           alt=""
         />
         <p
@@ -74,7 +75,7 @@ export default function HeaderContacts() {
         </svg> */}
         <img
           className="h-10 w-10 transition-colors group-hover:text-blue-200"
-          src="public/phone.svg"
+          src={data.headerPhone}
           alt=""
         />
         <p

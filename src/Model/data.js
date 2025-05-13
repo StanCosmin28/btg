@@ -24,6 +24,9 @@ const data = {
   ctaSection: `${baseUrl}/cta-section.png`,
   font1: `${baseUrl}/Colony_Wars.ttf`,
   font2: `${baseUrl}/Brink_Black.ttf`,
+  headerPhone: `${baseUrl}/phone.svg`,
+  headerMail: `${baseUrl}/mail.svg`,
+  headerLocation: `${baseUrl}/location.svg`,
 };
 
 export default data;
