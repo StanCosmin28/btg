@@ -124,9 +124,7 @@ export default function HeaderSection({
               <br />
               <span>{text1}</span>
               <span
-                style={{
-                  fontFamily2,
-                }}
+                style={{ fontFamily2 }}
                 className={`special-font2 ${textSize}`}
               >
                 {text2}
