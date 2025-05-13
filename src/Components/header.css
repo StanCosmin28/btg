@@ -7,8 +7,8 @@
 }
 @font-face {
   font-family: "Brink Black";
-  src: url("https://stancosmin28.github.io/btg/Brink_Black.otf")
-    format("opentype");
+  src: url("https://stancosmin28.github.io/btg/Brink_Black.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
