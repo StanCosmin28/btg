@@ -5,9 +5,19 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Brink Black";
+  src: url("https://stancosmin28.github.io/btg/Brink_Black.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .special-font {
   font-family: "Colony Wars", sans-serif;
+}
+.special-font2 {
+  font-family: "Brink Black", sans-serif;
 }
 
 @media only screen and (max-width: 375px) {
