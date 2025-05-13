@@ -15,7 +15,8 @@ export default function HeaderSection({
   borderColor = "#ffb900",
   borderWidth = 1,
   backgroundColor = "#060606",
-  textSize = "text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[7rem]",
+  textSize1 = "text-4xl sm:text-[4rem] md:text-[5rem] lg:text-[8rem] xl:text-[10rem]",
+  textSize2 = "text-6xl sm:text-[6rem] md:text-[7rem] lg:text-[10rem] xl:text-[12rem]",
   fontFamily1 = data.font1,
   fontFamily2 = data.font2,
   showProgress = true,
@@ -93,7 +94,7 @@ export default function HeaderSection({
             {/* Outline text (bottom layer) */}
             <h1
               ref={textRef}
-              className={`special-font font-bold break-words z-10 ${textSize}`}
+              className={`special-font font-bold break-words z-10 ${textSize1}`}
               style={{
                 color: "transparent",
                 WebkitTextStroke: `${borderWidth}px ${borderColor}`,
@@ -106,14 +107,14 @@ export default function HeaderSection({
               {text1}
               <span
                 style={{ fontFamily2 }}
-                className={`special-font2 ${textSize}`}
+                className={`special-font2 ${textSize2}`}
               >
                 {text2}
               </span>
             </h1>
             <h1
               ref={maskRef}
-              className={`special-font font-bold absolute top-0 left-0 z-20 break-words ${textSize}`}
+              className={`special-font font-bold absolute top-0 left-0 z-20 break-words ${textSize1}`}
               style={{
                 color: fillColor,
                 clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
@@ -125,7 +126,7 @@ export default function HeaderSection({
               <span>{text1}</span>
               <span
                 style={{ fontFamily2 }}
-                className={`special-font2 ${textSize}`}
+                className={`special-font2 ${textSize2}`}
               >
                 {text2}
               </span>

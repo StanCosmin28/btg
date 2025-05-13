@@ -20,9 +20,12 @@
   font-family: "Brink Black", sans-serif;
 }
 
-@media only screen and (max-width: 375px) {
-  h1 {
-    font-size: 25px;
+@media only screen and (max-width: 425px) {
+  .special-font {
+    font-size: 2rem;
+  }
+  .special-font2 {
+    font-size: 2.8rem;
   }
   .small-header {
     padding: 0 4px 0 4px;
