@@ -95,10 +95,10 @@ export default function SmartSolutions() {
             variants={headerVariants}
             className="flex flex-col md:mb-10"
           >
-            <h3 className="text-xl sm:text-2xl font-bold mb-2 text-amber-400">
+            <h3 className="text-xl sm:text-2xl font-bold mb-2 text-[#CC9D23]">
               SOLUȚII SMART
             </h3>
-            <div className="h-8 w-1 bg-amber-400 md:h-12"></div>
+            <div className="h-8 w-1 bg-[#CC9D23] md:h-12"></div>
           </motion.div>
 
           {/* Main Content */}

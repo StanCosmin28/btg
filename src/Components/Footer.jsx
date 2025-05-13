@@ -15,8 +15,8 @@ export default function Footer() {
     <footer className="mx-auto w-full p-4 py-6 lg:py-8 bg-gray-900 text-white">
       <div className="flex flex-col lg:flex-row lg:justify-between gap-8">
         {/* Logo and Description Section */}
-        <div className="flex flex-col gap-4 text-left lg:w-1/3">
-          <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-8 text-left lg:w-1/3">
+          <div className="flex flex-row items-center gap-4 justify-between px-2">
             <a href="/" className="flex items-center group">
               <img
                 src={data.logo}
@@ -27,20 +27,20 @@ export default function Footer() {
                 BTG
               </span>
             </a>
-            <p className="text-gray-400 text-sm sm:text-base">
-              Transformăm viziunea ta într-un plan inteligent, eficient și
-              adaptat nevoilor tale specifice.
-            </p>
           </div>
-          <button className="w-full p-2 sm:p-3 text-sm sm:text-base font-bold text-white bg-[#0655D1] hover:bg-blue-800 hover:scale-105 transition-all duration-300 rounded-md">
+
+          <button className="w-[285px] p-2 sm:p-3 text-sm sm:text-base font-bold text-white bg-[#0655D1] hover:bg-blue-800 hover:scale-105 transition-all duration-300 rounded-md contact-btn">
             Contactează-ne
           </button>
+          <p className="text-gray-400 text-sm sm:text-xl">
+            Viziunea ta | Planul nostru smart
+          </p>
         </div>
 
         {/* Servicii, Companie, Contact Sections */}
-        <div className="flex lg:flex-row lg:gap-12 gap-6 lg:w-2/3 text-left small-footer">
+        <div className="flex lg:flex-row lg:gap-12 gap-6 lg:w-2/3 text-left small-footer xl:gap-40 justify-between">
           {/* Servicii Section */}
-          <div className="flex-1">
+          <div className="">
             <h2 className="mb-4 text-sm font-semibold text-white uppercase">
               Servicii
             </h2>
@@ -73,7 +73,7 @@ export default function Footer() {
           </div>
 
           {/* Companie Section */}
-          <div className="flex-1">
+          <div className="">
             <h2 className="mb-4 text-sm font-semibold text-white uppercase">
               Companie
             </h2>
@@ -127,7 +127,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Section */}
-          <div className="flex-1">
+          <div className="">
             <h2 className="mb-4 text-sm font-semibold text-white uppercase">
               Contact
             </h2>
@@ -172,7 +172,7 @@ export default function Footer() {
                   <circle cx="12" cy="10" r="3" />
                 </svg>
                 <span className="text-white text-sm sm:text-base font-medium hover:underline transition-colors group-hover:text-blue-200">
-                  Iasi, Aleea Rozelor, Nr. 6A, Demisol
+                  Iasi, Aleea Rozelor, Nr. 6A, <br /> Demisol
                 </span>
               </a>
 
@@ -204,8 +204,8 @@ export default function Footer() {
       <hr className="my-6 border-gray-700 sm:mx-auto lg:my-8" />
 
       {/* Copyright and Social Links */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <span className="text-sm text-gray-400 text-center sm:text-left">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 text-gray-400 text-sm">
+        <span className="text-center sm:text-left">
           © 2025{" "}
           <a
             href="/"
@@ -215,8 +215,8 @@ export default function Footer() {
           </a>
           . Toate drepturile rezervate.
         </span>
-        <div className="flex justify-center space-x-5">
-          <a
+        <div className="flex justify-center space-x-5 ">
+          {/* <a
             href="#"
             className="text-gray-400 hover:text-white transition-colors hover:scale-110"
             aria-label="Facebook"
@@ -283,7 +283,9 @@ export default function Footer() {
                 clipRule="evenodd"
               />
             </svg>
-          </a>
+          </a> */}
+          <p>Termeni și condiții</p>
+          <p>Politica de confidențialitate</p>
         </div>
       </div>
     </footer>

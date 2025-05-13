@@ -20,10 +20,10 @@ const Expertiza = () => {
         <div className="flex flex-col space-y-6">
           {/* Header */}
           <div className="flex flex-col">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-amber-400">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-[#CC9D23]">
               Expertiză
             </h3>
-            <div className="h-8 w-1 bg-amber-400 md:h-12"></div>
+            <div className="h-8 w-1 bg-[#CC9D23] md:h-12"></div>
           </div>
 
           {/* Main Content */}

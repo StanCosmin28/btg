@@ -6,29 +6,29 @@ export default function WhatWeOfferSection() {
   const cards = [
     {
       icon: <Users className="w-8 h-8 text-white" />,
-      title: "Lipsa coordonării între specialități",
+      title: "Coordonare între specialități",
       description:
         "Asigurăm coerență între instalații. Fără conflicte pe șantier.",
       color: "bg-teal-500",
     },
     {
       icon: <Target className="w-8 h-8 text-white" />,
-      title: "Precision Design",
-      description:
-        "Meticulous designs that perfectly balance form and function.",
+      title: "Proiecte adaptate nevoilor tale",
+      description: "Punem accent pe personalizare și adaptabilitate.",
       color: "bg-emerald-500",
     },
     {
       icon: <Check className="w-8 h-8 text-white" />,
-      title: "Reliable Solutions",
-      description: "Dependable results that stand the test of time.",
+      title: "Costuri Controlate",
+      description:
+        "Planurile noastre optimizează costurile și previn depășirile de buget.",
       color: "bg-blue-500",
     },
     {
       icon: <Lightbulb className="w-8 h-8 text-white" />,
-      title: "Innovative Ideas",
+      title: "Viziunii de ansamblu",
       description:
-        "Forward-thinking solutions that transform challenges into wins.",
+        "Mulți se pierd în detalii. Noi integrăm totul într-un plan coerent.",
       color: "bg-red-500",
     },
   ];

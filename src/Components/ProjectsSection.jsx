@@ -4,40 +4,36 @@ import "./projects.css";
 // Sample project data
 const projectData = {
   commercial: {
-    title: "Proiectul Nexus Tower",
-    titleOption: "Comercial",
+    title: "Reabilitare obiectiv Neptun ",
+    titleOption: "Hotelier",
     description:
-      "Proiectele comerciale includ spații de retail moderne, complexe de birouri și dezvoltări mixte, concepute pentru funcționalitate maximă și estetică atractivă.",
-    image:
-      "https://images.unsplash.com/photo-1705858348697-f956f1dd7bb9?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "/portfolio/commercial",
+      "Soluții proiectate pentru controlul accesului, supraveghere video, rețea date-voce, detecție la efracție și sonorizare.",
+    image: "public/hotelier.webp",
+    link: "/portfolio/hotelier",
   },
   industrial: {
-    title: "Industriale",
+    title: "Hala Exonia",
     titleOption: "Industrial",
     description:
-      "Proiectele industriale cuprind depozite, fabrici și centre logistice, construite pentru eficiență și scalabilitate.",
-    image:
-      "https://images.unsplash.com/photo-1728471468415-bf96db35e79c?q=80&w=3562&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "Instalații electrice complete pentru siguranță, control și confort: iluminat, prize, efracție, acces, incendiu și supraveghere video.",
+    image: "public/industrial.webp",
     link: "/portfolio/industrial",
   },
   educational: {
-    title: "Educaționale",
+    title: "Reabilitare Energetică",
     titleOption: "Educațional",
     description:
-      "Proiectele educaționale includ școli, universități și centre de cercetare, concepute pentru a încuraja învățarea și inovația.",
-    image:
-      "https://plus.unsplash.com/premium_photo-1694475008606-9f98b1e914a0?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "Colegiul Național Mihai Eminescu - Instalații electrice, sanitare și termice proiectate pentru confort, funcționalitate și un mediu modern de învățare.",
+    image: "public/educational.webp",
     link: "/portfolio/educational",
   },
   institutional: {
-    title: "Instituționale",
-    titleOption: "Instituțional",
+    title: "Extindere și dotare UPU",
+    titleOption: "Spitalicesc",
     description:
-      "Proiectele instituționale acoperă spitale, clădiri guvernamentale și centre culturale, prioritizând accesibilitatea și durabilitatea.",
-    image:
-      "https://images.unsplash.com/photo-1651516467730-963b2346e174?q=80&w=3494&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "/portfolio/institutional",
+      "Spitalul de Urgență pentru Copii Sfânta Maria Iași - Instalații electrice (iluminat, prize), control acces, date-voce, detecție incendiu, supraveghere video și sonorizare.",
+    image: "public/spitalicesc.webp",
+    link: "/portfolio/spitalicesc",
   },
 };
 
@@ -56,10 +52,10 @@ export default function ProjectsSection() {
       <div className="max-w-8xl mx-auto">
         {/* Title and Vertical Line */}
         <div className="text-left mb-2">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-amber-400">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-[#CC9D23]">
             Proiecte
           </h2>
-          <div className="h-8 w-1 bg-amber-400 md:h-12"></div>
+          <div className="h-8 w-1 bg-[#CC9D23] md:h-12"></div>
         </div>
         {/* <div className="hidden lg:flex justify-center lg:gap-8">
           <div className="flex flex-wrap justify-center gap-4 mb-10">

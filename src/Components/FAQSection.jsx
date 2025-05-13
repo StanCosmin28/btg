@@ -45,7 +45,7 @@ export default function FAQSection() {
 
   return (
     <div
-      className=" flex justify-center items-center p-8 flex-col gap-10  md:my-30 small-faq"
+      className=" flex justify-center items-center p-8 flex-col gap-10  md:my-20 small-faq"
       onClick={handleOutsideClick}
     >
       <div className="w-11/12 max-w-5xl mx-auto">

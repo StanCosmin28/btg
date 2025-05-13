@@ -9,7 +9,8 @@ export default function HeaderSection({
   //   text = "Proiectăm Viitorul",
   //   text2 = "Inteligent al Clădirilor",
   text = "BTG",
-  text2 = "ROMANIA",
+  text1 = "R",
+  text2 = "OMANIA",
   fillColor = "#ffb900",
   borderColor = "#ffb900",
   borderWidth = 1,
@@ -101,6 +102,7 @@ export default function HeaderSection({
             >
               {text}
               <br />
+              {text1}
               {text2}
             </h1>
             <h1
@@ -114,7 +116,14 @@ export default function HeaderSection({
             >
               {text}
               <br />
-              {text2}
+              <span>{text1}</span>
+              <span
+                style={{
+                  fontFamily: "monospace",
+                }}
+              >
+                {text2}
+              </span>
             </h1>
           </div>
         </div>
