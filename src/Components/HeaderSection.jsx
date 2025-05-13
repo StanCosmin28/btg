@@ -16,7 +16,8 @@ export default function HeaderSection({
   borderWidth = 1,
   backgroundColor = "#060606",
   textSize = "text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[7rem]",
-  fontFamily = data.font,
+  fontFamily1 = data.font1,
+  fontFamily2 = data.font2,
   showProgress = true,
   className = "",
   style = {},
@@ -97,13 +98,13 @@ export default function HeaderSection({
                 color: "transparent",
                 WebkitTextStroke: `${borderWidth}px ${borderColor}`,
                 textStroke: `${borderWidth}px ${borderColor}`,
-                fontFamily,
+                fontFamily1,
               }}
             >
               {text}
               <br />
               {text1}
-              {text2}
+              <span style={{ fontFamily2 }}>{text2}</span>
             </h1>
             <h1
               ref={maskRef}
@@ -111,7 +112,7 @@ export default function HeaderSection({
               style={{
                 color: fillColor,
                 clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)",
-                fontFamily,
+                fontFamily1,
               }}
             >
               {text}
@@ -119,7 +120,7 @@ export default function HeaderSection({
               <span>{text1}</span>
               <span
                 style={{
-                  fontFamily: "monospace",
+                  fontFamily2,
                 }}
               >
                 {text2}

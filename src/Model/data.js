@@ -22,7 +22,8 @@ const data = {
   icon2: `${baseUrl}/icon2.svg`,
   icon3: `${baseUrl}/icon3.svg`,
   ctaSection: `${baseUrl}/cta-section.png`,
-  font: `${baseUrl}/Colony_Wars.ttf`,
+  font1: `${baseUrl}/Colony_Wars.ttf`,
+  font2: `${baseUrl}/Brink_Black.otf`,
 };
 
 export default data;
