@@ -7,10 +7,10 @@ const data = {
   housePlan2: `${baseUrl}/house-plan2.png`,
   services: `${baseUrl}/services.svg`,
   sliderImages: [
-    `${baseUrl}/comerciale.png`,
-    `${baseUrl}/conferinte.png`,
-    `${baseUrl}/industriale.png`,
-    `${baseUrl}/spitale.png`,
+    `${baseUrl}/hotelier.webp`,
+    `${baseUrl}/industrial.webp`,
+    `${baseUrl}/educational.webp`,
+    `${baseUrl}/spitalicesc.webp`,
   ],
   sliderDescription: [
     "CLĂDIRI COMERCIALE ȘI BIROURI",
