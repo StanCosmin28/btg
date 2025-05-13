@@ -15,8 +15,9 @@ export default function HeaderSection({
   borderColor = "#ffb900",
   borderWidth = 1,
   backgroundColor = "#060606",
-  textSize1 = "text-4xl sm:text-[4rem] md:text-[5rem] lg:text-[8rem] xl:text-[10rem]",
-  textSize2 = "text-5xl sm:text-[5rem] md:text-[6rem] lg:text-[9.5rem] xl:text-[12rem]",
+  textSize1 = "text-4xl sm:text-[3rem] md:text-[5rem] lg:text-[7rem] xl:text-[8rem]",
+  textSize2 = "text-3xl sm:text-[2.2rem] sm:-bottom-1 sm:right-4 md:text-[3.8rem] lg:text-[5.5rem] xl:text-[6.3rem]",
+  textPosition = " -bottom-1.5 left-15 sm:-bottom-2 md:-bottom-4 lg:-bottom-6 xl:-bottom-7 xl:left-48",
   fontFamily1 = data.font1,
   fontFamily2 = data.font2,
   showProgress = true,
@@ -94,7 +95,7 @@ export default function HeaderSection({
             {/* Outline text (bottom layer) */}
             <h1
               ref={textRef}
-              className={`special-font font-bold break-words z-10 ${textSize1}`}
+              className={`realtive special-font font-bold break-words z-10 ${textSize1}`}
               style={{
                 color: "transparent",
                 WebkitTextStroke: `${borderWidth}px ${borderColor}`,
@@ -107,7 +108,7 @@ export default function HeaderSection({
               {text1}
               <span
                 style={{ fontFamily2 }}
-                className={`special-font2 ${textSize2}`}
+                className={`special-font2 absolute ${textSize2} ${textPosition}`}
               >
                 {text2}
               </span>
@@ -126,7 +127,7 @@ export default function HeaderSection({
               <span>{text1}</span>
               <span
                 style={{ fontFamily2 }}
-                className={`special-font2 ${textSize2}`}
+                className={`special-font2 absolute ${textSize2} ${textPosition}`}
               >
                 {text2}
               </span>
