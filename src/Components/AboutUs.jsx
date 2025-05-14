@@ -4,7 +4,6 @@ import { useCountUp } from "react-countup";
 import data from "../Model/data";
 
 export default function AboutUs() {
-  // Animation controls
   const leftControls = useAnimation();
   const rightControls = useAnimation();
   const leftRef = useRef(null);

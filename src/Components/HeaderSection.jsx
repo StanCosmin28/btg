@@ -6,8 +6,6 @@ import data from "../Model/data";
 import "./header.css";
 
 export default function HeaderSection({
-  //   text = "Proiectăm Viitorul",
-  //   text2 = "Inteligent al Clădirilor",
   text = "BTG",
   text1 = "R",
   text2 = "OMANIA",
@@ -28,7 +26,7 @@ export default function HeaderSection({
   const sectionRef = useRef(null);
   const textRef = useRef(null);
   const maskRef = useRef(null);
-  const [fillProgress, setFillProgress] = useState(0);
+  // const [fillProgress, setFillProgress] = useState(0);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -47,7 +45,7 @@ export default function HeaderSection({
       scrub: true,
       onUpdate: (self) => {
         const progress = self.progress;
-        setFillProgress(progress);
+        // setFillProgress(progress);
         gsap.to(maskElement, {
           clipPath: `polygon(0% 0%, ${progress * 100}% 0%, ${
             progress * 100

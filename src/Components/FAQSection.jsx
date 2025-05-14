@@ -4,7 +4,6 @@ import "./faqSection.css";
 export default function FAQSection() {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  // Sample FAQ data - replace with your own content
   const faqItems = [
     {
       question: "Ce înseamnă proiectare BMS?",
@@ -33,12 +32,10 @@ export default function FAQSection() {
     },
   ];
 
-  // Handler for clicking accordion items
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  // Handler for clicking outside to close
   const handleOutsideClick = () => {
     setActiveIndex(null);
   };

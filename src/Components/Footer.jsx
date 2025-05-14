@@ -29,7 +29,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <button className="w-[285px] p-2 sm:p-3 text-sm sm:text-base font-bold text-white bg-[#0655D1] hover:bg-blue-800 hover:scale-105 transition-all duration-300 rounded-md contact-btn">
+          <button className="w-[285px] p-2 sm:p-3 text-sm sm:text-base font-bold text-white bg-[#0655D1] hover:bg-blue-800 hover:scale-105 transition-all duration-300 rounded-md contact-btn cursor-pointer">
             Contactează-ne
           </button>
           <p className="text-gray-400 text-sm sm:text-xl">
@@ -46,28 +46,13 @@ export default function Footer() {
             </h2>
             <ul className="text-gray-400 font-medium space-y-2">
               <li>
-                <a
-                  href="#"
-                  className="hover:text-white hover:underline underline-offset-4 transition-all"
-                >
-                  Proiectare
-                </a>
+                <a className="hover:text-white cursor-pointer">Proiectare</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="hover:text-white hover:underline underline-offset-4 transition-all"
-                >
-                  Optimizare
-                </a>
+                <a className="hover:text-white cursor-pointer">Optimizare</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="hover:text-white hover:underline underline-offset-4 transition-all"
-                >
-                  Integrare BMS
-                </a>
+                <a className="hover:text-white cursor-pointer">Integrare BMS</a>
               </li>
             </ul>
           </div>

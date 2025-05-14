@@ -6,7 +6,7 @@ export default function CTASection() {
     <section
       className="w-full flex justify-center items-center bg-center bg-no-repeat bg-cover py-12 sm:py-16 md:py-20 relative"
       style={{
-        backgroundImage: `url(${data.ctaSection})`, // Replace with your image URL
+        backgroundImage: `url(${data.ctaSection})`,
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black/25 to-black/50 z-10"></div>

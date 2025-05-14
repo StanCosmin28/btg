@@ -1,4 +1,3 @@
-import React from "react";
 import data from "../Model/data";
 
 const Expertiza = () => {
@@ -43,4 +42,4 @@ const Expertiza = () => {
   );
 };
 
-export default React.memo(Expertiza);
+export default Expertiza;

@@ -1,98 +1,98 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import "./parallaxStyles.css";
-import data from "../Model/data";
-// import Box from "./Box";
+// import React, { useEffect, useRef } from "react";
+// import { gsap } from "gsap";
+// import "./parallaxStyles.css";
+// import data from "../Model/data";
+// // import Box from "./Box";
 
-const HorizontalScrollSection = React.forwardRef((props, ref) => {
-  const containerRef = useRef(null);
-  const panelsRef = useRef([]);
-  const scrollTweenRef = useRef(null);
+// const HorizontalScrollSection = React.forwardRef((props, ref) => {
+//   const containerRef = useRef(null);
+//   const panelsRef = useRef([]);
+//   const scrollTweenRef = useRef(null);
 
-  const addToPanelsRef = (el) => {
-    if (el && !panelsRef.current.includes(el)) {
-      panelsRef.current.push(el);
-    }
-  };
+//   const addToPanelsRef = (el) => {
+//     if (el && !panelsRef.current.includes(el)) {
+//       panelsRef.current.push(el);
+//     }
+//   };
 
-  useEffect(() => {
-    if (panelsRef.current.length === 0 || !containerRef.current) return;
+//   useEffect(() => {
+//     if (panelsRef.current.length === 0 || !containerRef.current) return;
 
-    const totalPanels = panelsRef.current.length;
-    const totalWidth = 100 * (totalPanels - 1);
+//     const totalPanels = panelsRef.current.length;
+//     const totalWidth = 100 * (totalPanels - 1);
 
-    // Force recalculate width on resize
-    const handleResize = () => {
-      gsap.set(containerRef.current, {
-        width: `${totalPanels * window.innerWidth}px`,
-      });
-    };
+//     // Force recalculate width on resize
+//     const handleResize = () => {
+//       gsap.set(containerRef.current, {
+//         width: `${totalPanels * window.innerWidth}px`,
+//       });
+//     };
 
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Initial calculation
+//     window.addEventListener("resize", handleResize);
+//     handleResize(); // Initial calculation
 
-    scrollTweenRef.current = gsap.to(panelsRef.current, {
-      xPercent: -totalWidth,
-      ease: "power3.inOut",
-      scrollTrigger: {
-        trigger: containerRef.current,
-        pin: true,
-        scrub: 0.5,
-        start: "top top",
-        end: () => `+=${containerRef.current.offsetWidth}`,
-        anticipatePin: 1,
-      },
-    });
+//     scrollTweenRef.current = gsap.to(panelsRef.current, {
+//       xPercent: -totalWidth,
+//       ease: "power3.inOut",
+//       scrollTrigger: {
+//         trigger: containerRef.current,
+//         pin: true,
+//         scrub: 0.5,
+//         start: "top top",
+//         end: () => `+=${containerRef.current.offsetWidth}`,
+//         anticipatePin: 1,
+//       },
+//     });
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      if (scrollTweenRef.current?.scrollTrigger) {
-        scrollTweenRef.current.scrollTrigger.kill();
-      }
-      scrollTweenRef.current?.kill?.();
-    };
-  }, []);
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//       if (scrollTweenRef.current?.scrollTrigger) {
+//         scrollTweenRef.current.scrollTrigger.kill();
+//       }
+//       scrollTweenRef.current?.kill?.();
+//     };
+//   }, []);
 
-  // const images = [
-  //   "src/assets/slider0.png",
-  //   "src/assets/slider1.png",
-  //   "src/assets/slider2.png",
-  // ];
-  const { sliderImages } = data;
-  const renderMiniSections = () => {
-    //I need an even number in order to work properly for the next section
-    return Array.from({ length: 4 }).map((_, index) => (
-      <article
-        key={`panel-${index}`}
-        ref={addToPanelsRef}
-        className={`panel panel-${
-          index + 1
-        } relative w-full h-screen overflow-hidden`}
-      >
-        {/* ${index % 2 === 0 ? "blue" : "red"} */}
-        {/* <div className="box-container"> */}
-        {/* <Box className={`box-${index + 1}`}>{index + 1}</Box> */}
-        <div className="bg-center ">
-          <img className="image-center" src={sliderImages[index]} alt="" />
-          <div className="absolute text-left bottom-10 left-10 max-w-md">
-            <h1 className="text-3xl">{sliderImages[index]}</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-              adipisci architecto repudiandae non, veritatis labore!
-            </p>
-          </div>
-        </div>
-        {/* <Box className={`absolute box-${index + 1}-sub`}>{index + 1}.1</Box> */}
-        {/* </div> */}
-      </article>
-    ));
-  };
+//   // const images = [
+//   //   "src/assets/slider0.png",
+//   //   "src/assets/slider1.png",
+//   //   "src/assets/slider2.png",
+//   // ];
+//   const { sliderImages } = data;
+//   const renderMiniSections = () => {
+//     //I need an even number in order to work properly for the next section
+//     return Array.from({ length: 4 }).map((_, index) => (
+//       <article
+//         key={`panel-${index}`}
+//         ref={addToPanelsRef}
+//         className={`panel panel-${
+//           index + 1
+//         } relative w-full h-screen overflow-hidden`}
+//       >
+//         {/* ${index % 2 === 0 ? "blue" : "red"} */}
+//         {/* <div className="box-container"> */}
+//         {/* <Box className={`box-${index + 1}`}>{index + 1}</Box> */}
+//         <div className="bg-center ">
+//           <img className="image-center" src={sliderImages[index]} alt="" />
+//           <div className="absolute text-left bottom-10 left-10 max-w-md">
+//             <h1 className="text-3xl">{sliderImages[index]}</h1>
+//             <p>
+//               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+//               adipisci architecto repudiandae non, veritatis labore!
+//             </p>
+//           </div>
+//         </div>
+//         {/* <Box className={`absolute box-${index + 1}-sub`}>{index + 1}.1</Box> */}
+//         {/* </div> */}
+//       </article>
+//     ));
+//   };
 
-  return (
-    <section className="section container" ref={containerRef}>
-      {renderMiniSections()}
-    </section>
-  );
-});
+//   return (
+//     <section className="section container" ref={containerRef}>
+//       {renderMiniSections()}
+//     </section>
+//   );
+// });
 
-export default HorizontalScrollSection;
+// export default HorizontalScrollSection;

@@ -3,7 +3,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import samplePosts from "../Model/blogData";
 import "./blogCard.css";
 
-// BlogCard Component
 const BlogCard = ({ post }) => {
   const { image, title, description, date, link } = post;
 
@@ -50,7 +49,6 @@ const BlogCard = ({ post }) => {
   );
 };
 
-// Main BlogCarousel Component
 export default function BlogCarousel({ posts = samplePosts }) {
   const [scrollPosition, setScrollPosition] = useState(0);
   const carouselRef = useRef(null);
