@@ -5,7 +5,7 @@ import "./navbar.css";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(false); // Initially hidden
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
   const lastScrollPosition = useRef(0);
   const navbarRef = useRef(null);
 
@@ -65,8 +65,8 @@ const Navbar = () => {
     <nav
       ref={navbarRef}
       className={navbarClasses}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      // onMouseEnter={() => setIsHovered(true)}
+      // onMouseLeave={() => setIsHovered(false)}
     >
       <div className="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-4 xl:px-20">
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -78,12 +78,14 @@ const Navbar = () => {
           </span>
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button
-            type="button"
-            className="cursor-pointer bg-[#0655D1] hover:bg-blue-800 hover:font-bold focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center transition-all duration-300 hover:scale-110"
-          >
-            Contact
-          </button>
+          <a href="tel:+40232250885">
+            <button
+              type="button"
+              className="cursor-pointer bg-[#0655D1] hover:bg-blue-800 hover:font-bold focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center transition-all duration-300 hover:scale-110"
+            >
+              Contact
+            </button>
+          </a>
           <button
             onClick={toggleMenu}
             type="button"

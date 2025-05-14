@@ -29,9 +29,11 @@ export default function Footer() {
             </a>
           </div>
 
-          <button className="w-[285px] p-2 sm:p-3 text-sm sm:text-base font-bold text-white bg-[#0655D1] hover:bg-blue-800 hover:scale-105 transition-all duration-300 rounded-md contact-btn cursor-pointer">
-            Contactează-ne
-          </button>
+          <a href="tel:+40232250885">
+            <button className="w-[285px] p-2 sm:p-3 text-sm sm:text-base font-bold text-white bg-[#0655D1] hover:bg-blue-800 hover:scale-105 transition-all duration-300 rounded-md contact-btn cursor-pointer">
+              Contactează-ne
+            </button>
+          </a>
           <p className="text-gray-400 text-sm sm:text-xl">
             Viziunea ta | Planul nostru smart
           </p>
