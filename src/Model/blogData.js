@@ -42,7 +42,7 @@ const samplePosts = [
   {
     id: 5,
     image:
-      "https://images.unsplash.com/photo-14973662105479-4275897b37b7?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
+      "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
     title: "Eficiența energetică în proiecte rezidențiale",
     description:
       "Metode dovedite pentru a reduce consumul de energie și costurile în locuințele moderne.",
