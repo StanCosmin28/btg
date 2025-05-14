@@ -4,13 +4,13 @@ const data = {
   logo: `${baseUrl}/btg-logo.svg`,
   video: `${baseUrl}/btg-video.mp4`,
   housePlan: `${baseUrl}/house-plan.svg`,
-  housePlan2: `${baseUrl}/house-plan2.png`,
+  housePlan2: `${baseUrl}/house-plan2.webp`,
   services: `${baseUrl}/services.svg`,
   sliderImages: [
-    `${baseUrl}/comerciale.png`,
-    `${baseUrl}/conferinte.png`,
-    `${baseUrl}/industriale.png`,
-    `${baseUrl}/spitale.png`,
+    `${baseUrl}/comerciale.webp`,
+    `${baseUrl}/conferinte.webp`,
+    `${baseUrl}/industriale.webp`,
+    `${baseUrl}/spitale.webp`,
   ],
   sliderDescription: [
     "CLĂDIRI COMERCIALE ȘI BIROURI",

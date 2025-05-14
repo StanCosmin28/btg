@@ -8,27 +8,26 @@ const StackCollapseSections = () => {
   const sectionsRef = useRef([]);
   const contentRefs = useRef([]);
 
+  const baseUrl = "https://stancosmin28.github.io/btg/";
+
   const sectionData = [
     {
-      titleLines: ["PROIECTARE", "ARHITECTURALA", "INTELIGENTA"],
+      titleLines: ["PROIECTARE", "ARHITECTURALĂ", "INTELIGENTĂ"],
       description:
         "Creăm planuri care combină estetica, funcționalitatea și eficiența energetică, cu soluții personalizate pentru fiecare proiect.",
-      backgroundImage:
-        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      backgroundImage: `${baseUrl}/slider0.webp`,
     },
     {
-      titleLines: ["OPTIMIZARE", "EFICIENTA"],
+      titleLines: ["OPTIMIZARE", "EFICIENTĂ"],
       description:
         "Reducem consumul de energie și maximizăm utilizarea spațiului, oferind soluții durabile și economice.",
-      backgroundImage:
-        "https://plus.unsplash.com/premium_photo-1681989486976-9ec9d2eac57a?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      backgroundImage: `${baseUrl}/slider1.webp`,
     },
     {
       titleLines: ["SISTEME BMS", "INTEGRATE"],
       description:
         "Integrarea tehnologiilor avansate asigură control total asupra locuinței, cu suport continuu pe toată durata proiectului.",
-      backgroundImage:
-        "https://images.unsplash.com/photo-1533378890784-b2a5b0a59d40?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      backgroundImage: `${baseUrl}/slider2.webp`,
     },
   ];
 
@@ -154,7 +153,7 @@ const StackCollapseSections = () => {
             <div className="absolute h-full w-full bg-gradient-to-t from-[rgba(36,36,36)] to-transparent z-1">
               <div className="text-left absolute z-100 md:bottom-20 bottom-15 md:left-20 left-10  md:max-w-sm lg:max-w-lg max-w-[320px]">
                 <div className="absolute h-[100%] w-[1px] bg-amber-300 -left-6"></div>
-                <h1 className="font-extrabold text-amber-300 lg:text-7xl text-4xl mb-2">
+                <h1 className="font-extrabold text-amber-300 lg:text-7xl text-4xl mb-6">
                   {section.titleLines.map((line, lineIndex) => (
                     <React.Fragment key={lineIndex}>
                       {line}
