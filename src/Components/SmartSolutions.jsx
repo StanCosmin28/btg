@@ -79,7 +79,7 @@ export default function SmartSolutions() {
     <section
       id="solutions"
       ref={sectionRef}
-      className="section flex w-full min-h-screen justify-center items-center flex-col md:flex-row px-8 bg-white small-solutions"
+      className="section flex w-full min-h-screen justify-center items-center flex-col md:flex-row xl:px-20 bg-white small-solutions"
     >
       {/* Left Section: Text and Icons */}
       <div className="flex w-full md:w-1/2 min-h-[50vh] md:min-h-screen flex-col justify-center p-4 sm:p-6">

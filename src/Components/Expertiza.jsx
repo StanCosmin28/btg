@@ -4,7 +4,7 @@ const Expertiza = () => {
   return (
     <section
       id="expertiza"
-      className="w-full min-h-[500px] md:min-h-[700px] sm:h-[500px] relative bg-fit bg-right flex items-center bg-[#f7f8fa]"
+      className="w-full min-h-[500px] md:min-h-[700px] sm:h-[500px] relative bg-fit bg-right flex items-center bg-[#f7f8fa] xl:pl-20"
       style={{
         backgroundSize: "auto 100%",
         backgroundRepeat: "no-repeat",
