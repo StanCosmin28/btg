@@ -65,7 +65,7 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
     };
   }, []);
 
-  const { sliderImages, sliderDescription } = data;
+  const { sliderImages, sliderDescription, sliderDescriptionHover } = data;
   const renderPanels = () => {
     return Array.from({ length: 2 }).map((_, index) => (
       <article
@@ -87,8 +87,7 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
                 {sliderDescription[index * 2] || "No Description"}
               </h3>
               <p className="max-w-[450px] group-hover:block hidden z-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                itaque totam quam voluptates. Dolores?
+                {sliderDescriptionHover[index * 2] || "No Description"}
               </p>
             </div>
           </div>
@@ -107,8 +106,7 @@ const HorizontalScrollSectionDemo = React.forwardRef((props, ref) => {
                 {sliderDescription[index * 2 + 1] || "No Description"}
               </h3>
               <p className="max-w-[450px] group-hover:block hidden z-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                itaque totam quam voluptates. Dolores?
+                {sliderDescriptionHover[index * 2 + 1] || "No Description"}
               </p>
             </div>
           </div>

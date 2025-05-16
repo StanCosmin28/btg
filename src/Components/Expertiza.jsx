@@ -4,7 +4,7 @@ const Expertiza = () => {
   return (
     <section
       id="expertiza"
-      className="w-full min-h-[500px] md:min-h-[700px] sm:h-[500px] relative bg-fit bg-right flex items-center bg-[#f7f8fa] xl:pl-20"
+      className="w-full min-h-[500px] md:min-h-[700px] sm:h-[500px] relative bg-fit bg-right flex items-center bg-[#f7f8fa] max-w-7xl mx-auto"
       style={{
         backgroundSize: "auto 100%",
         backgroundRepeat: "no-repeat",
@@ -15,7 +15,7 @@ const Expertiza = () => {
       {/* <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0.25)] to-[rgba(0,0,0,0.25)]"></div> */}
 
       {/* Content */}
-      <div className="w-full md:w-2/3 h-full flex flex-col justify-center items-left p-4 sm:p-6 md:p-8  z-[10] text-left">
+      <div className="w-full md:w-2/3 h-full flex flex-col justify-center items-left p-4 sm:p-6 md:p-8 z-[10] text-left">
         <div className="flex flex-col space-y-6">
           {/* Header */}
           <div className="flex flex-col">

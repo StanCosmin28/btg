@@ -49,7 +49,10 @@ export default function ProjectsSection() {
   const currentProject = projectData[selectedOption];
 
   return (
-    <section id="proiecte" className="py-10 px-4 xl:mx-20 md:px-8 bg-[#f7f8fa]">
+    <section
+      id="proiecte"
+      className="py-10 px-4 mx-auto md:px-8 bg-[#f7f8fa] max-w-7xl"
+    >
       <div className="max-w-8xl mx-auto">
         {/* Title and Vertical Line */}
         <div className="text-left mb-2">
@@ -144,7 +147,7 @@ export default function ProjectsSection() {
             <img
               src={currentProject.image}
               alt={currentProject.title}
-              className="w-[400px] h-[400px] object-cover rounded-lg mx-auto"
+              className="w-[650px] h-[450px] object-cover rounded-lg mx-auto"
             />
           </div>
         </div>
@@ -180,7 +183,7 @@ export default function ProjectsSection() {
             <img
               src={currentProject.image}
               alt={currentProject.title}
-              className="w-full  h-[400px] object-cover rounded-lg"
+              className="w-full  h-[300px] object-cover rounded-lg"
             />
             {/* <div className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-80 p-4 rounded-lg w-3/4 max-w-[300px]"> */}
             <p className="text-gray-700 text-md w-full my-2 small-projects-description">

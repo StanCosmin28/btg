@@ -18,6 +18,12 @@ const data = {
     "HOTELURI, PENSIUNI ȘI CENTRE DE CONFERINȚE",
     "SPITALE ȘI INSTITUȚII MEDICALE",
   ],
+  sliderDescriptionHover: [
+    "Creșterea eficienței energetice, control complet asupra iluminatului, climatizării și securității.",
+    "Optimizare a consumului energetic și automatizare a proceselor de producție.",
+    "Experiență premium pentru oaspeți, personalizare automată a condițiilor de confort.",
+    "Management strict al echipamentelor critice, siguranță maximă și intervenție rapidă.",
+  ],
   icon1: `${baseUrl}/icon1.svg`,
   icon2: `${baseUrl}/icon2.svg`,
   icon3: `${baseUrl}/icon3.svg`,
