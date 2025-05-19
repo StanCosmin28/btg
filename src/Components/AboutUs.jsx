@@ -80,7 +80,7 @@ export default function AboutUs() {
   return (
     <div
       id="about"
-      className="flex w-full min-h-screen justify-center items-center flex-col lg:flex-row p-5 small-about"
+      className="flex w-full min-h-screen justify-center items-center flex-col lg:flex-row p-5 small-about max-w-[1640px] mx-auto"
     >
       <motion.div
         ref={leftRef}
@@ -100,17 +100,17 @@ export default function AboutUs() {
             <div className="h-8 w-1 bg-[#CC9D23] lg:h-12"></div>
           </div>
 
-          <div className="w-full sm:w-[90%] lg:w-[80%] space-y-4 lg:space-y-6 text-black">
+          <div className="w-full sm:w-[90%] lg:w-[95%] space-y-4 lg:space-y-6 text-black">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
               Partenerul tău de încredere în proiectare
             </h2>
-            <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl">
+            <h3 className="text-base sm:text-lg lg:text-xl xl:text-full">
               BTG (BUILDING TECHNOLOGY GROUP) este o companie specializată în
               soluții de automatizare pentru clădiri, oferind sisteme Building
               Management System (BMS) personalizate pentru diverse tipuri de
               spații: rezidențiale, comerciale și industriale.
             </h3>
-            <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl">
+            <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl mb-10">
               Scopul principal al acestor sisteme este de a îmbunătăți
               Confortul, Siguranța și Eficiența energetică a clădirilor,
               permițând controlul de la distanță al diferitelor funcții ale

@@ -45,7 +45,7 @@ export default function FAQSection() {
       className=" flex justify-center items-center p-8 flex-col gap-10  md:my-20 small-faq"
       onClick={handleOutsideClick}
     >
-      <div className="w-11/12 max-w-5xl mx-auto">
+      <div className="w-11/12 max-w-7xl mx-auto">
         <h1 className="text-3xl text-center font-semibold text-gray-800 mb-8">
           Nu ai găsit răspuns la întrebarea ta?
         </h1>

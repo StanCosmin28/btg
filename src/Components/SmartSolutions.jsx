@@ -97,7 +97,7 @@ export default function SmartSolutions() {
           </motion.div>
 
           <div className="w-full sm:w-[90%] lg:w-[80%] sm:space-y-4 lg:space-y-6 text-black">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold max-w-[660px]">
               Proiectăm sisteme BMS direct pe planul tău.
             </h2>
             <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl">

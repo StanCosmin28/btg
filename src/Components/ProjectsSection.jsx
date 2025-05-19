@@ -109,7 +109,7 @@ export default function ProjectsSection() {
               </div>
             </div>
             {/* Title */}
-            <div className="lg:ml-5 xl:ml-20 mt-10 flex flex-col gap-5 max-w-lg">
+            <div className="mt-10 flex flex-col gap-5 max-w-lg">
               <h3 className="lg:text-4xl xl:text-5xl font-bold text-gray-900 text-left">
                 {currentProject.title}
               </h3>

@@ -92,7 +92,7 @@ export default function BlogCarousel({ posts = samplePosts }) {
       className="py-8 px-4 md:px-8 lg:mt-30 md:mb-10 small-blog"
       // style={{ backgroundColor: "#f7f8fa" }}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-[#CC9D23]">
             Ultimele Noutăți

@@ -27,10 +27,10 @@ const Expertiza = () => {
 
           {/* Main Content */}
           <div className="text-black flex flex-col ">
-            <h2 className="text-6xl font-semibold max-[576px]:text-[35px] md:text-5xl sm:text-3xl max-w-sm md:max-w-xl lg:text-5xl lg:max-w-[850px]">
+            <h2 className="text-6xl font-bold max-[576px]:text-[35px] md:text-5xl sm:text-3xl max-w-sm md:max-w-xl lg:text-5xl lg:max-w-[580px] md:mb-2">
               Soluții personalizate pentru orice tip de clădire
             </h2>
-            <p className="text-xl mt-6 max-w-lg max-[376px]:text-sm lg:text-2xl lg:max-w-[550px] ">
+            <p className="text-xl mt-6 max-w-lg max-[376px]:text-sm lg:text-2xl lg:max-w-[550px] text-gray-700 ">
               Adaptăm soluții pentru diverse tipuri de clădiri, asigurând
               siguranță sporită, economii de energie și costuri operaționale
               reduse, cu sisteme fiabile și ușor de integrat.
