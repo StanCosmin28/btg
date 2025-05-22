@@ -1,0 +1,20 @@
+/* reset-styles.css */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "tailwindcss";
+
+/* Reset local de stiluri globale */
+.reset-wrapper,
+.reset-wrapper * {
+  all: unset;
+  all: revert-layer; /* Dacă folosești Tailwind cu @layer */
+  box-sizing: border-box;
+  font-family: inherit;
+}
+/* * {
+  color: black;
+} */
+.reset-wrapper {
+  display: block;
+}

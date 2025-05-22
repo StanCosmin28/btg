@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import StackCollapseSections from "./Components/StackCollapseSections";
@@ -16,7 +16,22 @@ import Projects from "./Components/Projects";
 import ProjectsNavigation from "./Components/ProjectsNavigation";
 import ProjectsHeader from "./Components/ProjectsHeader";
 import ProjectsSection from "./Components/ProjectsSection";
+import ProjectsWrapper from "./Components/ProjectsWrapper";
+import AppWrapper from "./Components/AppWrapper";
+import Test from "./Components/Test";
 // import ProjectsContainer from "./Components/ProjectsContainer";
+
+function Blog() {
+  return (
+    <ProjectsWrapper>
+      <ProjectsNavigation />
+      <ProjectsHeader />
+      <ProjectsSection />
+      <CTAButtonSection />
+      <Footer />
+    </ProjectsWrapper>
+  );
+}
 
 function App() {
   return (
@@ -26,7 +41,8 @@ function App() {
           <Route
             path="/btg"
             element={
-              <>
+              // <>
+              <AppWrapper>
                 <Navbar />
                 <HeaderSection />
                 <AboutUs />
@@ -40,23 +56,11 @@ function App() {
                 <FAQSection />
                 <CTAButtonSection />
                 <Footer />
-              </>
+              </AppWrapper>
+              // </>
             }
           />
-          <Route
-            path="btg/portofoliu"
-            element={
-              // <ProjectsContainer>
-              <>
-                <ProjectsNavigation />
-                {/* <ProjectsHeader /> */}
-                {/* <ProjectsSection /> */}
-                {/* <CTAButtonSection /> */}
-                {/* <Footer /> */}
-              </>
-              // </ProjectsContainer>
-            }
-          />
+          <Route path="btg/portofoliu" element={<Blog />} />
         </Routes>
       </Router>
     </>

@@ -18,10 +18,12 @@ export default function ProjectsSection() {
   return (
     <section className="py-16 px-4 md:px-6 lg:px-8 bg-white">
       <div className="container mx-auto max-w-7xl flex flex-col">
-        <h2 className="text-red-600 text-4xl font-bold mb-2">PROIECTE</h2>
+        <h2 className="text-red-600 text-4xl font-bold mb-2 text-left">
+          PROIECTE
+        </h2>
         <hr className="border-red-600 w-30 border-2 mb-4" />
         <div className="flex flex-col items-start text-left  mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-5">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-5 text-black">
             FRAGAR construiește viitorul — durabil, eficient și conectat la
             tehnologie.
           </h2>
@@ -37,7 +39,7 @@ export default function ProjectsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-black">
           {projectsData.map((post) => (
             <ProjectsCard key={post.id} post={post} />
           ))}
