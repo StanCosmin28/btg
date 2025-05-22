@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import StackCollapseSections from "./Components/StackCollapseSections";
@@ -17,9 +17,6 @@ import ProjectsNavigation from "./Components/ProjectsNavigation";
 import ProjectsHeader from "./Components/ProjectsHeader";
 import ProjectsSection from "./Components/ProjectsSection";
 import ProjectsWrapper from "./Components/ProjectsWrapper";
-import AppWrapper from "./Components/AppWrapper";
-import Test from "./Components/Test";
-// import ProjectsContainer from "./Components/ProjectsContainer";
 
 function Blog() {
   return (
@@ -41,8 +38,7 @@ function App() {
           <Route
             path="/btg"
             element={
-              // <>
-              <AppWrapper>
+              <>
                 <Navbar />
                 <HeaderSection />
                 <AboutUs />
@@ -56,8 +52,7 @@ function App() {
                 <FAQSection />
                 <CTAButtonSection />
                 <Footer />
-              </AppWrapper>
-              // </>
+              </>
             }
           />
           <Route path="btg/portofoliu" element={<Blog />} />
