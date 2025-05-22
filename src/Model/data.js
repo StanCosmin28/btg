@@ -33,6 +33,7 @@ const data = {
   headerPhone: `${baseUrl}/phone.svg`,
   headerMail: `${baseUrl}/mail.svg`,
   headerLocation: `${baseUrl}/location.svg`,
+  blogHeader: `${baseUrl}/blog-header.webp`,
 };
 
 export default data;
