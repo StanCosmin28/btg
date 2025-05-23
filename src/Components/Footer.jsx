@@ -19,12 +19,12 @@ export default function Footer() {
           <div className="flex flex-row items-center gap-4 justify-between px-2">
             <a href="/" className="flex items-center group">
               <img
-                src={data.logo}
-                className="h-8 mr-3 transition-transform group-hover:rotate-12 small-footer-logo"
+                src={data.logoFull}
+                className="h-20 mr-3 transition-transform group-hover:rotate-12 small-footer-logo"
                 alt="BTG Logo"
               />
               <span className="text-xl font-semibold whitespace-nowrap text-white group-hover:text-blue-400 transition-colors">
-                BTG
+                {/* BTG */}
               </span>
             </a>
           </div>

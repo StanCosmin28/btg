@@ -55,7 +55,7 @@ export default function ProjectsNavigation() {
           to="/fragar"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src={data.logo} className="h-8" alt="Fragar" />
+          <img src={data.logoFull} className="h-12" alt="Fragar" />
           <span className="leading-none self-center text-xl font-bold whitespace-nowrap text-black transition-colors duration-300">
             {/* {isMobile ? "Fragar" : "Fragar Trading"} */}
           </span>

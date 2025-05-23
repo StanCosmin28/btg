@@ -69,8 +69,11 @@ const Navbar = () => {
       // onMouseLeave={() => setIsHovered(false)}
     >
       <div className="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-4 xl:px-20">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={data.logoFull} className="h-8" alt="BTG Logo" />
+        <a
+          href="#"
+          className="flex items-center space-x-3 rtl:space-x-reverse scale-110"
+        >
+          <img src={data.logoFull} className="h-12" alt="BTG Logo" />
           <span
             className={`self-center text-2xl font-bold whitespace-nowrap ${textColor} transition-colors duration-300`}
           >
