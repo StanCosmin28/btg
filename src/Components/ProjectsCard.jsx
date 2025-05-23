@@ -56,7 +56,7 @@ function ClockIcon() {
 
 export default function ProjectsCard({ post }) {
   return (
-    <article className="flex flex-col bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md">
+    <article className="flex flex-col bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md cursor-pointer">
       <div className="relative h-48 w-full overflow-hidden">
         <img
           src={post.image || "https://via.placeholder.com/600x400"}

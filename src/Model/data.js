@@ -2,6 +2,7 @@ const baseUrl = "https://stancosmin28.github.io/btg/";
 
 const data = {
   logo: `${baseUrl}/btg-logo.svg`,
+  logoFull: `${baseUrl}/btg-logo-full.svg`,
   video: `${baseUrl}/btg-video.mp4`,
   housePlan: `${baseUrl}/house-plan.svg`,
   housePlan2: `${baseUrl}/house-plan2.webp`,

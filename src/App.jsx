@@ -20,13 +20,15 @@ import ProjectsWrapper from "./Components/ProjectsWrapper";
 
 function Blog() {
   return (
-    <ProjectsWrapper>
+    // <ProjectsWrapper>
+    <>
       <ProjectsNavigation />
       <ProjectsHeader />
       <ProjectsSection />
       <CTAButtonSection />
       <Footer />
-    </ProjectsWrapper>
+    </>
+    // </ProjectsWrapper>
   );
 }
 
