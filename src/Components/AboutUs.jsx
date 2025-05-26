@@ -104,13 +104,13 @@ export default function AboutUs() {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
               Partenerul tău de încredere în proiectare
             </h2>
-            <h3 className="text-base sm:text-lg lg:text-xl xl:text-full">
+            <h3 className="text-base sm:text-lg lg:text-xl">
               BTG (BUILDING TECHNOLOGY GROUP) este o companie specializată în
               soluții de automatizare pentru clădiri, oferind sisteme Building
               Management System (BMS) personalizate pentru diverse tipuri de
               spații: rezidențiale, comerciale și industriale.
             </h3>
-            <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl mb-10">
+            <h3 className="text-base sm:text-lg lg:text-xl  mb-10">
               Scopul principal al acestor sisteme este de a îmbunătăți
               Confortul, Siguranța și Eficiența energetică a clădirilor,
               permițând controlul de la distanță al diferitelor funcții ale

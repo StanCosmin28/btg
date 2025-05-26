@@ -18,17 +18,17 @@ export default function FAQSection() {
     {
       question: "Cu se softuri lucrați?",
       answer:
-        "Costurile variază în funcție de proiect, dar economiile pe termen lung din energie și eficiență le compensează. Oferim consultații gratuite pentru estimări.",
+        "Folosim AutoCAD, Revit și alte instrumente, adaptate cerințelor proiectului și echipei de arhitectură.",
     },
     {
       question: "Care sunt costurile asociate cu proiectarea inteligentă",
       answer:
-        "Da, putem integra sisteme smart într-o clădire existentă, adaptându-le la infrastructura actuală.",
+        "Costurile variază în funcție de proiect, dar economiile pe termen lung din energie și eficiență le compensează. Oferim consultații gratuite pentru estimări.",
     },
     {
       question: "Pot integra sisteme smart într-o clădire existentă?",
       answer:
-        "Folosim AutoCAD, Revit și alte instrumente, adaptate cerințelor proiectului și echipei de arhitectură.",
+        "Da, putem integra sisteme smart într-o clădire existentă, adaptându-le la infrastructura actuală.",
     },
   ];
 
