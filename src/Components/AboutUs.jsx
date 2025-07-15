@@ -87,7 +87,7 @@ export default function AboutUs() {
         initial="hidden"
         animate={leftControls}
         variants={leftVariants}
-        className="flex w-full lg:w-1/2 min-h-[50vh] lg:min-h-screen flex-col justify-center p-5 xl:pl-20 2xl:pl-32"
+        className="flex w-full mt-8 lg:w-1/2 min-h-[50vh] lg:min-h-screen flex-col justify-center p-5 xl:pl-20 2xl:pl-32"
       >
         <div
           id="left"
@@ -100,7 +100,7 @@ export default function AboutUs() {
             <div className="h-8 w-1 bg-[#CC9D23] lg:h-12"></div>
           </div>
 
-          <div className="w-full sm:w-[90%] lg:w-[95%] space-y-4 lg:space-y-6 text-black">
+          <div className="w-full sm:w-[90%] lg:w-[95%] space-y-4 lg:space-y-6 text-[#383838]">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold">
               Partenerul tău de încredere în proiectare
             </h2>
@@ -116,29 +116,29 @@ export default function AboutUs() {
               permițând controlul de la distanță al diferitelor funcții ale
               acestora.
             </h3>
-            <button className="p-2 sm:p-3 lg:p-4 text-base sm:text-lg lg:text-xl xl:text-2xl border-[1px] border-blue-800 text-blue-800 font-bold hover:bg-blue-800 hover:text-white transition-all hover:scale-105 rounded-lg cursor-pointer">
+            <button className="p-4 sm:p-4 lg:p-4 text-base sm:text-md lg:text-lg xl:text-xl border-[1px] border-blue-800 text-blue-800 font-bold hover:bg-blue-800 hover:text-white transition-all hover:scale-105 rounded-lg cursor-pointer">
               Descoperă mai mult
             </button>
           </div>
 
-          <div className="flex flex-row flex-wrap gap-4 p-4 justify-between text-center text-black">
-            <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
+          <div className="flex flex-row flex-wrap gap-4 p-4 justify-between text-center text-[#383838]">
+            <div className="flex-1 min-w-[50px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
               <h3
                 className="text-xl sm:text-5xl lg:text-6xl font-bold"
                 id="experienceCounter"
               >
                 15
               </h3>
-              <p className="text-sm lg:text-base">Ani de experienta</p>
+              <p className="text-xs lg:text-base">Ani de experiență</p>
             </div>
-            <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
+            <div className="flex-1 min-w-[50px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
               <h3
                 className="text-xl sm:text-5xl lg:text-6xl font-bold"
                 id="projectsCounter"
               >
                 150
               </h3>
-              <p className="text-sm lg:text-base">Proiecte livrate cu succes</p>
+              <p className="text-xs lg:text-base">Proiecte livrate cu succes</p>
             </div>
             <div className="flex-1 min-w-[100px] p-2 flex flex-col justify-center items-center gap-2 text-blue-800">
               <h3
@@ -147,7 +147,7 @@ export default function AboutUs() {
               >
                 50
               </h3>
-              <p className="text-sm lg:text-base">Viitoare colaborari</p>
+              <p className="text-xs lg:text-base">Viitoare colaborări</p>
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function AboutUs() {
       >
         <div
           id="right"
-          className="flex justify-center items-center w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[500px] xl:max-w-[600px] 2xl:max-w-[700px]"
+          className="flex justify-center items-center w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[400px] xl:max-w-[400px] 2xl:max-w-[500px]"
         >
           <img
             className="w-full h-auto object-contain"

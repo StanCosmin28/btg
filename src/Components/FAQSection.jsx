@@ -42,7 +42,7 @@ export default function FAQSection() {
 
   return (
     <div
-      className=" flex justify-center items-center p-8 flex-col gap-10  md:my-20 small-faq"
+      className=" flex justify-center items-center p-8 flex-col gap-10  md:my-20 small-faq mb-8"
       onClick={handleOutsideClick}
     >
       <div className="w-11/12 max-w-7xl mx-auto">
@@ -104,12 +104,13 @@ export default function FAQSection() {
           ))}
         </ul>
       </div>
-      <a
+      {/* <a
         href="tel:+40232250885"
-        className="transition-all duration-300 hover:scale-102 max-w-4xl w-full p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white rounded-lg cursor-pointer bg-[#0655D1]"
+        // className="transition-all duration-300 hover:scale-102 max-w-4xl w-full p-2 sm:p-3 text-base sm:text-lg md:text-xl text-white font-bold hover:bg-blue-800 hover:text-white rounded-lg cursor-pointer bg-[#0655D1]"
+        className="transition-all duration-300 hover:scale-102 min-w-[550px] max-w-[550px]  p-2 sm:p-[30px] text-base sm:text-[13px] md:text-[8.7px] text-white font-bold hover:bg-blue-800 hover:text-white rounded-lg cursor-pointer bg-[#0655D1]"
       >
         Contactează-ne
-      </a>
+      </a> */}
     </div>
   );
 }

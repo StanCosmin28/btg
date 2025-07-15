@@ -138,7 +138,7 @@ const Navbar = () => {
                 className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 cursor-pointer`}
                 onClick={(e) => handleScrollToSection(e, "solutions")}
               >
-                Solutii
+                Soluții
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
@@ -148,7 +148,7 @@ const Navbar = () => {
                 className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 cursor-pointer`}
                 onClick={(e) => handleScrollToSection(e, "expertiza")}
               >
-                Expertiza
+                Expertiză
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>

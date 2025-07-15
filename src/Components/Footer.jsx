@@ -20,7 +20,7 @@ export default function Footer() {
             <a href="/" className="flex items-center group">
               <img
                 src={data.logoFull}
-                className="h-20 mr-3 transition-transform group-hover:rotate-12 small-footer-logo"
+                className="h-20 mr-3 small-footer-logo"
                 alt="BTG Logo"
               />
               <span className="text-xl font-semibold whitespace-nowrap text-white group-hover:text-blue-400 transition-colors">

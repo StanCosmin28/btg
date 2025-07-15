@@ -51,7 +51,7 @@ export default function Projects() {
   return (
     <section
       id="proiecte"
-      className="py-10 px-4 mx-auto md:px-8 bg-[#f7f8fa] max-w-7xl"
+      className="py-10 px-4 mx-auto md:px-8 bg-[#f7f8fa] max-w-7xl mt-[100px]"
     >
       <div className="max-w-8xl mx-auto">
         {/* Title and Vertical Line */}

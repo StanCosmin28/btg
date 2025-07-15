@@ -1,72 +1,68 @@
 import { motion } from "framer-motion";
-import { Check, Lightbulb, Target, Users } from "lucide-react";
+// import { Check, Lightbulb, Target, Users } from "lucide-react";
 import "./whatWeOffer.css";
 
 export default function WhatWeOfferSection() {
   const cards = [
     {
-      icon: <Users className="w-8 h-8 text-white" />,
+      // icon: <Lightbulb className="w-8 h-8 text-white" />,
+      icon: "public/zoom.png",
+      title: "Viziuni de ansamblu",
+      description:
+        "Mulți se pierd în detalii. Noi integrăm totul într-un plan coerent.",
+      color: "bg-[#243673]",
+    },
+    {
+      // icon: <Users className="w-8 h-8 text-white" />,
+      icon: "public/people.png",
       title: "Coordonare între specialități",
       description:
         "Asigurăm coerență între instalații. Fără conflicte pe șantier.",
-      color: "bg-teal-500",
+      color: "bg-[#243673]",
     },
     {
-      icon: <Target className="w-8 h-8 text-white" />,
-      title: "Proiecte adaptate nevoilor tale",
-      description: "Punem accent pe personalizare și adaptabilitate.",
-      color: "bg-emerald-500",
-    },
-    {
-      icon: <Check className="w-8 h-8 text-white" />,
+      // icon: <Check className="w-8 h-8 text-white" />,
+      icon: "public/money.png",
       title: "Costuri Controlate",
       description:
         "Planurile noastre optimizează costurile și previn depășirile de buget.",
-      color: "bg-blue-500",
+      color: "bg-[#243673]",
     },
     {
-      icon: <Lightbulb className="w-8 h-8 text-white" />,
-      title: "Viziunii de ansamblu",
-      description:
-        "Mulți se pierd în detalii. Noi integrăm totul într-un plan coerent.",
-      color: "bg-red-500",
+      // icon: <Target className="w-8 h-8 text-white" />,
+      icon: "public/light.png",
+      title: "Proiecte adaptate nevoilor tale",
+      description: "Punem accent pe personalizare și adaptabilitate.",
+      color: "bg-[#243673]",
     },
   ];
 
   return (
-    <section className="w-full py-15 mt-20 small-wwo">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Probleme soluționate Eficient
+    <section className="w-full min-h-screen py-16 bg-[#243673] text-white flex flex-col items-center justify-center">
+      <div className="max-w-7xl px-4 w-full">
+        <div className="flex flex-col lg:flex-row justify-between items-center mb-12">
+          <h2 className="text-3xl md:text-4xl xl:text-[2.8rem] font-bold text-center lg:text-left lg:w-1/3">
+            Probleme <br /> soluționate{" "}
+            <span className="text-[#EFB82C]"> eficient </span>
           </h2>
-          {/* <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-            Delivering innovative solutions with precision, reliability, and
-            creativity.
-          </p> */}
-        </div>
-
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 custom-cursor">
-          {cards.map((card, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5 }}
-              className="bg-gray-50 rounded-xl shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition-all hover:scale-105 duration-350"
-            >
-              <div
-                className={`w-14 h-14 rounded-full flex items-center justify-center ${card.color} mb-4`}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-full lg:w-2/3 mt-8 lg:mt-0 custom-cursor">
+            {cards.map((card, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.5 }}
+                className="bg-[#243673] rounded-xl p-6 flex flex-col items-center text-center hover:shadow-lg transition-all hover:scale-105 duration-350"
               >
-                {card.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {card.title}
-              </h3>
-              <p className="text-gray-600 text-sm">{card.description}</p>
-            </motion.div>
-          ))}
+                <div className="w-14 h-14 rounded-full bg-[#FBBF24] flex items-center justify-center mb-6">
+                  <img src={card.icon} alt="" />
+                </div>
+                <h3 className="text-lg font-semibold mb-4">{card.title}</h3>
+                <p className="text-sm md:max-w-[300px]">{card.description}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
