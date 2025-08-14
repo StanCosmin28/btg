@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./projects.css";
 
 // Sample project data
@@ -40,6 +41,11 @@ const projectData = {
 
 // Projects Component
 export default function Projects() {
+  {
+    {
+      console.log("NOT WORKING!!!! LINK TO PORTFOLIO!!!");
+    }
+  }
   const [selectedOption, setSelectedOption] = useState("commercial");
 
   const handleOptionClick = (option) => {
@@ -118,8 +124,8 @@ export default function Projects() {
                 {currentProject.description}
               </p>
               {/* Button */}
-              <a
-                href="/btg/portofoliu"
+              <Link
+                to="/portofoliu"
                 className="max-w-[160px] justify-start flex items-center px-4 py-2 text-sm font-medium text-white bg-[#0655D1] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 hover:font-bold transition-all duration-300 hover:scale-105"
               >
                 Vezi portofoliul
@@ -138,7 +144,7 @@ export default function Projects() {
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -183,7 +189,7 @@ export default function Projects() {
             <img
               src={currentProject.image}
               alt={currentProject.title}
-              className="w-full  h-[300px] object-cover rounded-lg"
+              className="w-full h-[300px] object-cover rounded-lg"
             />
             {/* <div className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white bg-opacity-80 p-4 rounded-lg w-3/4 max-w-[300px]"> */}
             <p className="text-gray-700 text-md w-full my-2 small-projects-description">
@@ -194,7 +200,7 @@ export default function Projects() {
 
           {/* Button */}
           <div className="text-center mt-4">
-            <a
+            <a //NOT WORKING!!!!!!!!!!!!!!!!
               href="/btg/portofoliu"
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#0655D1] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 hover:font-bold transition-all duration-300 hover:scale-105"
             >
