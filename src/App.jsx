@@ -23,6 +23,7 @@ import AboutUsOverview from "./Components/AboutUsOverview";
 import ProjectPost from "./Components/ProjectPost";
 import Certifications from "./Components/Certifications";
 import AboutUsCTA from "./Components/AboutUsCTA";
+import ProjectsCTA from "./Components/ProjectsCTA";
 
 function Blog() {
   return (
@@ -31,6 +32,7 @@ function Blog() {
       <ProjectsNavigation />
       <ProjectsHeader />
       <ProjectsSection />
+      <ProjectsCTA />
       <CTAButtonSection />
       <Footer />
       {/* </> */}
