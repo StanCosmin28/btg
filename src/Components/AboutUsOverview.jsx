@@ -1,5 +1,3 @@
-import data from "../Model/data";
-
 export default function CardGrid() {
   return (
     <div className="w-full max-w-7xl mx-auto py-6 px-4 sm:px-6">

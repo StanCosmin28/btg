@@ -52,7 +52,7 @@ export default function ProjectsNavigation() {
     <nav ref={navbarRef} className={navbarClasses}>
       <div className="max-w-screen-xxl flex flex-wrap items-center justify-between mx-auto p-4 xl:px-20">
         <Link
-          to="/btg"
+          to="/btg/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src={data.logoFull} className="h-12" alt="Fragar" />

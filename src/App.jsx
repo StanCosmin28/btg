@@ -20,6 +20,7 @@ import ProjectsWrapper from "./Components/ProjectsWrapper";
 import AboutUsHeader from "./Components/AboutUsHeader";
 import AboutUsSection from "./Components/AboutUsSection";
 import AboutUsOverview from "./Components/AboutUsOverview";
+import ProjectPost from "./Components/ProjectPost";
 
 function Blog() {
   return (
@@ -73,6 +74,17 @@ function App() {
             }
           />
           <Route path="btg/portofoliu" element={<Blog />} />
+          <Route
+            path="btg/portofoliu/:id"
+            element={
+              <>
+                <ProjectsNavigation />
+                <ProjectPost />
+                <CTAButtonSection />
+                <Footer />
+              </>
+            }
+          />
           <Route path="btg/despre-noi" element={<AboutUsPage />} />
         </Routes>
       </Router>
