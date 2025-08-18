@@ -25,6 +25,12 @@ const data = {
     "Experiență premium pentru oaspeți, personalizare automată a condițiilor de confort.",
     "Management strict al echipamentelor critice, siguranță maximă și intervenție rapidă.",
   ],
+  wwoIcons: {
+    zoomIcon: `${baseUrl}/zoom.png`,
+    peopleIcon: `${baseUrl}/people.png`,
+    moneyIcon: `${baseUrl}/money.png`,
+    lightIcon: `${baseUrl}/light.png`,
+  },
   icon1: `${baseUrl}/icon1.svg`,
   icon2: `${baseUrl}/icon2.svg`,
   icon3: `${baseUrl}/icon3.svg`,

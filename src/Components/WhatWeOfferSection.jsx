@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
 // import { Check, Lightbulb, Target, Users } from "lucide-react";
 import "./whatWeOffer.css";
+import data from "../Model/data";
 
 export default function WhatWeOfferSection() {
+  const { zoomIcon, peopleIcon, moneyIcon, lightIcon } = { ...data.wwoIcons };
   const cards = [
     {
       // icon: <Lightbulb className="w-8 h-8 text-white" />,
-      icon: "public/zoom.png",
+      icon: zoomIcon,
       title: "Viziuni de ansamblu",
       description:
         "Mulți se pierd în detalii. Noi integrăm totul într-un plan coerent.",
@@ -14,7 +16,7 @@ export default function WhatWeOfferSection() {
     },
     {
       // icon: <Users className="w-8 h-8 text-white" />,
-      icon: "public/people.png",
+      icon: peopleIcon,
       title: "Coordonare între specialități",
       description:
         "Asigurăm coerență între instalații. Fără conflicte pe șantier.",
@@ -22,7 +24,7 @@ export default function WhatWeOfferSection() {
     },
     {
       // icon: <Check className="w-8 h-8 text-white" />,
-      icon: "public/money.png",
+      icon: moneyIcon,
       title: "Costuri Controlate",
       description:
         "Planurile noastre optimizează costurile și previn depășirile de buget.",
@@ -30,7 +32,7 @@ export default function WhatWeOfferSection() {
     },
     {
       // icon: <Target className="w-8 h-8 text-white" />,
-      icon: "public/light.png",
+      icon: lightIcon,
       title: "Proiecte adaptate nevoilor tale",
       description: "Punem accent pe personalizare și adaptabilitate.",
       color: "bg-[#243673]",
