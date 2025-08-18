@@ -17,6 +17,9 @@ import ProjectsNavigation from "./Components/ProjectsNavigation";
 import ProjectsHeader from "./Components/ProjectsHeader";
 import ProjectsSection from "./Components/ProjectsSection";
 import ProjectsWrapper from "./Components/ProjectsWrapper";
+import AboutUsHeader from "./Components/AboutUsHeader";
+import AboutUsSection from "./Components/AboutUsSection";
+import AboutUsOverview from "./Components/AboutUsOverview";
 
 function Blog() {
   return (
@@ -28,6 +31,18 @@ function Blog() {
       <CTAButtonSection />
       <Footer />
       {/* </> */}
+    </ProjectsWrapper>
+  );
+}
+function AboutUsPage() {
+  return (
+    <ProjectsWrapper>
+      <AboutUsHeader />
+      <AboutUsSection />
+      <AboutUsOverview />
+      <ProjectsNavigation />
+      <CTAButtonSection />
+      <Footer />
     </ProjectsWrapper>
   );
 }
@@ -58,6 +73,7 @@ function App() {
             }
           />
           <Route path="btg/portofoliu" element={<Blog />} />
+          <Route path="btg/despre-noi" element={<AboutUsPage />} />
         </Routes>
       </Router>
     </>

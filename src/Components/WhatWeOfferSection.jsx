@@ -5,6 +5,7 @@ import data from "../Model/data";
 
 export default function WhatWeOfferSection() {
   const { zoomIcon, peopleIcon, moneyIcon, lightIcon } = { ...data.wwoIcons };
+
   const cards = [
     {
       // icon: <Lightbulb className="w-8 h-8 text-white" />,
