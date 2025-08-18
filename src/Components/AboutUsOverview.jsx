@@ -1,6 +1,6 @@
 export default function CardGrid() {
   return (
-    <div className="w-full max-w-7xl mx-auto py-6 px-4 sm:px-6">
+    <div className="w-full max-w-7xl mx-auto py-6 px-4 sm:px-6 my-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
         <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
           <img

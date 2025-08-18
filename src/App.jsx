@@ -21,6 +21,8 @@ import AboutUsHeader from "./Components/AboutUsHeader";
 import AboutUsSection from "./Components/AboutUsSection";
 import AboutUsOverview from "./Components/AboutUsOverview";
 import ProjectPost from "./Components/ProjectPost";
+import Certifications from "./Components/Certifications";
+import AboutUsCTA from "./Components/AboutUsCTA";
 
 function Blog() {
   return (
@@ -41,6 +43,8 @@ function AboutUsPage() {
       <AboutUsHeader />
       <AboutUsSection />
       <AboutUsOverview />
+      <Certifications />
+      <AboutUsCTA />
       <ProjectsNavigation />
       <CTAButtonSection />
       <Footer />
