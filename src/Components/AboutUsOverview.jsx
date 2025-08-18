@@ -4,9 +4,9 @@ export default function CardGrid() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
         <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
             alt="Card 1"
-            className="w-full h-32 object-cover rounded-t-lg"
+            className="w-full max-w-30 mx-auto object-cover rounded-t-lg"
           />
           <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-2">
             Card 1
@@ -17,9 +17,9 @@ export default function CardGrid() {
         </div>
         <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
             alt="Card 2"
-            className="w-full h-32 object-cover rounded-t-lg"
+            className="w-full max-w-30 mx-auto object-cover rounded-t-lg"
           />
           <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-2">
             Card 2
@@ -30,9 +30,9 @@ export default function CardGrid() {
         </div>
         <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
             alt="Card 3"
-            className="w-full h-32 object-cover rounded-t-lg"
+            className="w-full max-w-30 mx-auto object-cover rounded-t-lg"
           />
           <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-2">
             Card 3
@@ -43,9 +43,9 @@ export default function CardGrid() {
         </div>
         <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
             alt="Card 4"
-            className="w-full h-32 object-cover rounded-t-lg"
+            className="w-full max-w-30 mx-auto object-cover rounded-t-lg"
           />
           <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-2">
             Card 4
@@ -56,9 +56,9 @@ export default function CardGrid() {
         </div>
         <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
             alt="Card 5"
-            className="w-full h-32 object-cover rounded-t-lg"
+            className="w-full max-w-30 mx-auto object-cover rounded-t-lg"
           />
           <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-2">
             Card 5
@@ -69,9 +69,9 @@ export default function CardGrid() {
         </div>
         <div className="bg-white border border-gray-200 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
             alt="Card 6"
-            className="w-full h-32 object-cover rounded-t-lg"
+            className="w-full max-w-30 mx-auto object-cover rounded-t-lg"
           />
           <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-2">
             Card 6
