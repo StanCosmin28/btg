@@ -9,7 +9,7 @@ export default function HeaderContacts() {
       >
         <img
           className="h-10 w-10 transition-colors group-hover:text-blue-200"
-          src={data.headerMail}
+          src="/mail.svg"
           alt=""
         />
         <p
@@ -28,7 +28,7 @@ export default function HeaderContacts() {
       >
         <img
           className="h-10 w-10 transition-colors group-hover:text-blue-200"
-          src={data.headerLocation}
+          src="/location.svg"
           alt=""
         />
         <p
@@ -48,7 +48,7 @@ export default function HeaderContacts() {
       >
         <img
           className="h-10 w-10 transition-colors group-hover:text-blue-200"
-          src={data.headerPhone}
+          src="/phone.svg"
           alt=""
         />
         <p

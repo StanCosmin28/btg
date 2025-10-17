@@ -84,7 +84,7 @@ export default function HeaderSection({
             muted
             className="absolute inset-0 object-cover w-full h-full"
           >
-            <source src={data.video} type="video/mp4" />
+            <source src="/btg-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

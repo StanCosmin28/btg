@@ -214,10 +214,7 @@ export default function ProjectsSection() {
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 cursor-pointer relative"
             >
-              <a
-                href={`http://localhost:5173/btg/portofoliu/${product.id}`}
-                className="block w-full"
-              >
+              <a href={`/portofoliu/${product.id}`} className="block w-full">
                 <img
                   src={product.coverImage}
                   alt={product.title}

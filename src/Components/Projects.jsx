@@ -46,7 +46,7 @@ export default function Projects() {
   };
 
   const handlePortfolioClick = () => {
-    window.location.href = "/btg/portofoliu";
+    window.location.href = "/portofoliu";
   };
 
   const currentProject = projectData[selectedOption];
@@ -76,7 +76,7 @@ export default function Projects() {
                   <button
                     key={option}
                     onClick={() => handleOptionClick(option)}
-                    className={`py-2 px-4 rounded-lg text-sm font-medium transition-colors ${
+                    className={`py-2 px-4 rounded-lg text-sm font-medium transition-colors cursor-pointer${
                       selectedOption === option
                         ? "bg-amber-100 text-amber-600"
                         : "bg-white text-gray-800 hover:bg-gray-100"
@@ -97,7 +97,7 @@ export default function Projects() {
               </p>
               <button
                 onClick={handlePortfolioClick}
-                className="max-w-[160px] justify-start flex items-center px-4 py-2 text-sm font-medium text-white bg-[#0655D1] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 hover:font-bold transition-all duration-300 hover:scale-105"
+                className="max-w-[160px] justify-start flex items-center px-4 py-2 text-sm font-medium text-white bg-[#0655D1] rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 hover:font-bold transition-all duration-300 hover:scale-105 cursor-pointer"
               >
                 Vezi portofoliul
                 <svg

@@ -4,7 +4,7 @@ export default function ProjectsHeader() {
     <>
       <div className="w-full  h-[60vh] overflow-hidden">
         <img
-          src={data.blogHeader}
+          src="/blog-header.webp"
           alt="Blog header image"
           className="w-full h-full object-cover object-center"
         />

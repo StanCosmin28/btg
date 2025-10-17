@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="flex flex-row items-center gap-4 justify-between px-2">
             <a href="/" className="flex items-center group">
               <img
-                src={data.logoFull}
+                src="/btg-logo-full.svg"
                 className="h-20 mr-3 small-footer-logo"
                 alt="BTG Logo"
               />

@@ -8,7 +8,7 @@ const Expertiza = () => {
       style={{
         backgroundSize: "auto 100%",
         backgroundRepeat: "no-repeat",
-        backgroundImage: `url(${data.housePlan2})`,
+        backgroundImage: "url(/house-plan2.webp)",
       }}
     >
       {/* Gradient Overlay (uncomment if needed for text contrast) */}

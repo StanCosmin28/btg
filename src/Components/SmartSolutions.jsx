@@ -128,21 +128,21 @@ export default function SmartSolutions() {
               variants={iconVariants}
               className="p-2 flex flex-col justify-center items-center gap-2 text-blue-800"
             >
-              <img className="w-16" src={data.icon1} alt="Expertiză icon" />
+              <img className="w-16" src="/icon1.svg" alt="Expertiză icon" />
               <p className="text-sm lg:text-base font-bold">EXPERTIZĂ</p>
             </motion.div>
             <motion.div
               variants={iconVariants}
               className="p-2 flex flex-col justify-center items-center gap-2 text-blue-800"
             >
-              <img className="w-16" src={data.icon2} alt="Precizie icon" />
+              <img className="w-16" src="/icon2.svg" alt="Precizie icon" />
               <p className="text-sm lg:text-base font-bold">PRECIZIE</p>
             </motion.div>
             <motion.div
               variants={iconVariants}
               className="p-2 flex flex-col justify-center items-center gap-2 text-blue-800"
             >
-              <img className="w-16" src={data.icon3} alt="Fiabilitate icon" />
+              <img className="w-16" src="/icon3.svg" alt="Fiabilitate icon" />
               <p className="text-sm lg:text-base font-bold">FIABILITATE</p>
             </motion.div>
           </motion.div>
@@ -162,7 +162,7 @@ export default function SmartSolutions() {
         >
           <img
             className="w-full h-auto"
-            src={data.services}
+            src="/services.svg"
             alt="Smart Solutions Diagram"
           />
         </div>

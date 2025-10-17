@@ -73,7 +73,7 @@ const Navbar = () => {
           href="#"
           className="flex items-center space-x-3 rtl:space-x-reverse scale-110"
         >
-          <img src={data.logoFull} className="h-12" alt="BTG Logo" />
+          <img src="/btg-logo-full.svg" className="h-12" alt="BTG Logo" />
           <span
             className={`self-center text-2xl font-bold whitespace-nowrap ${textColor} transition-colors duration-300`}
           >
@@ -163,14 +163,14 @@ const Navbar = () => {
               </a>
             </li>
             <li className="relative group">
-              <a
+              {/* <a
                 // href="#"
                 className={`block py-2 px-3 ${textColor} rounded-sm md:p-0 transition-all duration-300 cursor-pointer`}
                 onClick={(e) => handleScrollToSection(e, "blog")}
               >
                 Blog
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </a> */}
             </li>
           </ul>
         </div>

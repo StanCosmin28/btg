@@ -166,7 +166,7 @@ export default function AboutUs() {
         >
           <img
             className="w-full h-auto object-contain"
-            src={data.housePlan}
+            src="/house-plan.svg"
             alt="House plan illustration"
             loading="lazy"
           />

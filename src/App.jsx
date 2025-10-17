@@ -10,7 +10,7 @@ import HorizontalScrollSectionDemo from "./Components/HorizontalScrollDemo";
 import WhatWeOfferSection from "./Components/WhatWeOfferSection";
 import Expertiza from "./Components/Expertiza";
 import FAQSection from "./Components/FAQSection";
-import BlogCard from "./Components/BlogCard";
+// import BlogCard from "./Components/BlogCard";
 import CTAButtonSection from "./Components/CTASection";
 import Projects from "./Components/Projects";
 import ProjectsNavigation from "./Components/ProjectsNavigation";
@@ -42,6 +42,7 @@ function Blog() {
 function AboutUsPage() {
   return (
     <ProjectsWrapper>
+      {/*  <> */}
       <AboutUsHeader />
       <AboutUsSection />
       <AboutUsOverview />
@@ -50,6 +51,7 @@ function AboutUsPage() {
       <ProjectsNavigation />
       <CTAButtonSection />
       <Footer />
+      {/* </> */}
     </ProjectsWrapper>
   );
 }
@@ -60,7 +62,7 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/btg"
+            path="/"
             element={
               <>
                 <Navbar />
@@ -72,16 +74,16 @@ function App() {
                 <WhatWeOfferSection />
                 <Expertiza />
                 <Projects />
-                <BlogCard />
+                {/* <BlogCard /> */}
                 <FAQSection />
                 <CTAButtonSection />
                 <Footer />
               </>
             }
           />
-          <Route path="btg/portofoliu" element={<Blog />} />
+          <Route path="/portofoliu" element={<Blog />} />
           <Route
-            path="btg/portofoliu/:id"
+            path="/portofoliu/:id"
             element={
               <>
                 <ProjectsNavigation />

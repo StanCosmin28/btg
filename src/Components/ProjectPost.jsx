@@ -82,7 +82,7 @@ export default function ProjectPost() {
       <header className="w-full bg-white border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-left leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center leading-tight mb-6">
             {post.title}
           </h1>
 
