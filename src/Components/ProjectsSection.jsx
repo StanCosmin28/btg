@@ -49,6 +49,7 @@
 //     </section>
 //   );
 // }
+
 import { useState, useRef, useEffect } from "react";
 // import articles from "../Posts/domainsData";
 import projectsData from "../Model/projectsData";
@@ -244,11 +245,7 @@ export default function ProjectsSection() {
           ))}
         </div>
       </div>
-      <div className="flex w-full justify-center items-center p-5">
-        {/* <a className="text-gray-600 font-normal underline opacity-30" href="#">
-          Mai multe articole
-        </a> */}
-      </div>
+      <div className="flex w-full justify-center items-center p-5"></div>
     </section>
   );
 }

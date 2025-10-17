@@ -1,40 +1,36 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./projects.css";
 
-const baseUrl = "https://stancosmin28.github.io/btg/";
+// const baseUrl = "https://stancosmin28.github.io/btg/";
 const projectData = {
   commercial: {
     title: "Reabilitare obiectiv Neptun ",
     titleOption: "Hotelier",
     description:
       "Soluții proiectate pentru controlul accesului, supraveghere video, rețea date-voce, detecție la efracție și sonorizare.",
-    image: `${baseUrl}/hotelier.webp`,
-    link: `${baseUrl}/hotelier.webp`,
+    image: `/hotelier.webp`,
   },
   industrial: {
     title: "Hala Exonia",
     titleOption: "Industrial",
     description:
       "Instalații electrice complete pentru siguranță, control și confort: iluminat, prize, efracție, acces, incendiu și supraveghere video.",
-    image: `${baseUrl}/industrial.webp`,
-    link: `${baseUrl}/industrial.webp`,
+    image: `/industrial.webp`,
   },
   educational: {
     title: "Reabilitare Energetică",
     titleOption: "Educațional",
     description:
       "Colegiul Național Mihai Eminescu - Instalații electrice, sanitare și termice proiectate pentru confort, funcționalitate și un mediu modern de învățare.",
-    image: `${baseUrl}/educational.webp`,
-    link: `${baseUrl}/educational.webp`,
+    image: `/educational.webp`,
   },
   institutional: {
     title: "Extindere și dotare UPU",
     titleOption: "Spitalicesc",
     description:
       "Spitalul de Urgență pentru Copii Sfânta Maria Iași - Instalații electrice (iluminat, prize), control acces, date-voce, detecție incendiu, supraveghere video și sonorizare.",
-    image: `${baseUrl}/spitalicesc.webp`,
-    link: `${baseUrl}/spitalicesc.webp`,
+    image: `/spitalicesc.webp`,
   },
 };
 
